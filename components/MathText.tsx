@@ -2,6 +2,14 @@
 
 import React from "react";
 
+declare global {
+  interface Window {
+    MathJax?: {
+      typesetPromise?: (elements?: unknown[]) => Promise<void>;
+    };
+  }
+}
+
 type Props = {
   text: string;
   className?: string;
@@ -19,12 +27,11 @@ export function MathText({ text, className }: Props) {
       // Preserve line breaks in dummy text for readability
       .replace(/\n/g, "<br/>");
 
-    const w = typeof window !== "undefined" ? (window as any) : undefined;
-    if (w && w.MathJax && typeof w.MathJax.typesetPromise === "function") {
+    const w = typeof window !== "undefined" ? window : undefined;
+    if (w?.MathJax?.typesetPromise) {
       w.MathJax.typesetPromise([el]).catch(() => {});
     }
   }, [text]);
 
   return <div ref={ref} className={className} />;
 }
-

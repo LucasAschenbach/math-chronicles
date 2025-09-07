@@ -6,8 +6,8 @@
   - Validates optional image object and file existence
 */
 
-const fs = require("fs");
-const path = require("path");
+import fs from "node:fs";
+import path from "node:path";
 
 function fail(msg) {
   console.error(`\n❌ Content validation failed: ${msg}`);

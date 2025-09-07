@@ -22,11 +22,10 @@ jobs:
         run: npm ci
 
       - name: Validate content
-        run: node scripts/validate-content.js
+        run: node scripts/validate-content.mjs
 
       - name: Lint
         run: npm run lint
 
       - name: Build
         run: npm run build
-
