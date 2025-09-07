@@ -21,6 +21,9 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Expose repo slug for star button
+        run: echo "NEXT_PUBLIC_GITHUB_REPO=${{ github.repository }}" >> $GITHUB_ENV
+
       - name: Validate content
         run: node scripts/validate-content.mjs
 
