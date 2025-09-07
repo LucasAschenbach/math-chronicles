@@ -6,9 +6,9 @@ Contributions are welcome! See `CONTRIBUTING.md` for how to add or edit timeline
 
 ## GitHub Pages Deployment
 
-- The workflow `.github/workflows/gh-pages.yml` builds a static export and deploys it to GitHub Pages on pushes to `main`/`master`.
-- It automatically sets `BASE_PATH` to `/<repo-name>` for project pages, or root for `*.github.io` repositories.
-- No Jekyll: the workflow creates `out/.nojekyll` so `_next/` assets are served correctly.
+- Deploy: `.github/workflows/gh-pages.yml` runs on pushes to `main` (and on manual dispatch) and publishes to GitHub Pages.
+- CI: `.github/workflows/ci.yml` runs on pull requests (and manual dispatch) to validate content, lint, and build without deploying.
+- The deploy workflow sets `BASE_PATH` to `/<repo-name>` for project pages, or root for `*.github.io` repositories, and creates `out/.nojekyll`.
 
 Local build (static export):
 
