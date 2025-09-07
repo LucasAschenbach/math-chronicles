@@ -1,0 +1,45 @@
+[
+  {
+    "year": "300 BCE",
+    "title": "Elements",
+    "blurb": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in mattis augue. Aenean volutpat arcu sed sem auctor, sit amet semper ipsum bibendum.",
+    "details": "Display math: $$E=mc^2$$. Inline math like $a^2+b^2=c^2$ also works.",
+    "image": { "src": "/placeholder-figure.svg", "caption": "A placeholder figure" }
+  },
+  {
+    "year": "1637",
+    "title": "Analytic Geometry",
+    "blurb": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.",
+    "details": "An example formula: $y = mx + b$. Another: $\\int_0^1 x^2\\,dx = 1/3$."
+  },
+  {
+    "year": "1687",
+    "title": "Principia Mathematica",
+    "blurb": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores.",
+    "details": "Kepler's third law can be written as $T^2 \\propto a^3$."
+  },
+  {
+    "year": "1822",
+    "title": "Navier Fluid Equations",
+    "blurb": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?",
+    "details": "Momentum equation (symbolic): $\\rho(\\partial_t u + u\\cdot\\nabla u) = -\\nabla p + \\mu \\Delta u$."
+  },
+  {
+    "year": "1872",
+    "title": "Set Theory",
+    "blurb": "Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.",
+    "details": "Cardinality example: $|\\mathbb{N}| = |\\mathbb{Z}|$."
+  },
+  {
+    "year": "1931",
+    "title": "Incompleteness Theorems",
+    "blurb": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque.",
+    "details": "Self-reference with $G \\leftrightarrow \\neg \\mathrm{Prov}(\\ulcorner G \\urcorner)$."
+  },
+  {
+    "year": "1976",
+    "title": "Four Color Theorem (computer-assisted)",
+    "blurb": "Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio.",
+    "details": "Graph coloring example uses $\\chi(G) \\leq 4$ for planar $G$."
+  }
+]
