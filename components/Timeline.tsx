@@ -44,7 +44,7 @@ function TimelineRow({ item }: { item: TimelineItem }) {
   return (
     <li className="group grid grid-cols-[1fr_2rem_1fr] gap-6 sm:gap-10 items-start">
       {/* Year (left) */}
-      <div className="text-right pr-4 sm:pr-8 text-neutral-300 tabular-nums select-none leading-6">
+      <div className="text-right text-neutral-300 tabular-nums select-none leading-6">
         {item.year}
       </div>
 
