@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { FilterToggle } from "../components/FilterToggle";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -46,7 +47,9 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black text-white`}>
         <div className="min-h-screen flex flex-col">
           <header className="px-6 sm:px-10 py-6 flex items-center gap-4">
-            <h1 className="text-2xl font-semibold tracking-tight flex-1">Math Chronicles</h1>
+            <h1 className="text-2xl font-semibold tracking-tight">Math Chronicles</h1>
+            <FilterToggle />
+            <div className="flex-1" />
             <iframe
               src={`https://ghbtns.com/github-btn.html?user=${owner}&repo=${name}&type=star&count=true`}
               title="GitHub"

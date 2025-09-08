@@ -35,7 +35,8 @@ function main() {
     fail("timeline.json must export a JSON array of items");
   }
 
-  const requiredKeys = ["id", "year", "title", "blurb"]; // details and image are optional
+  // required string fields
+  const requiredStringKeys = ["id", "year", "title", "blurb"]; // details and image are optional
   const errors = [];
   const ids = new Set();
 
@@ -46,9 +47,18 @@ function main() {
       return;
     }
 
-    for (const k of requiredKeys) {
+    for (const k of requiredStringKeys) {
       if (!(k in it)) errors.push(`${where} missing required field '${k}'`);
       else if (typeof it[k] !== "string") errors.push(`${where}.${k} must be a string`);
+    }
+
+    // level (display level) is required integer >= 0
+    if (!("level" in it)) {
+      errors.push(`${where} missing required field 'level'`);
+    } else if (typeof it.level !== "number" || !Number.isInteger(it.level)) {
+      errors.push(`${where}.level must be an integer number`);
+    } else if (it.level < 0) {
+      errors.push(`${where}.level must be >= 0`);
     }
 
     // id uniqueness

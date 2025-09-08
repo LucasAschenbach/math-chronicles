@@ -5,6 +5,7 @@ import Image from "next/image";
 import { MathText } from "./MathText";
 
 export type TimelineItem = {
+  level: number; // 0 = full, 1 = compact, >=2 = hidden
   id?: string;
   year: string;
   endYear?: string;
@@ -20,7 +21,21 @@ export type TimelineItem = {
   sources?: { label?: string; url: string }[];
 };
 
-export function Timeline({ items }: { items: TimelineItem[] }) {
+export function Timeline({
+  items,
+  maxLevel = 1,
+  domains,
+}: {
+  items: TimelineItem[];
+  maxLevel?: number;
+  domains?: string[];
+}) {
+  let visible = items.filter((it) => (typeof it.level === "number" ? it.level : 0) <= maxLevel);
+  if (domains && domains.length > 0) {
+    visible = visible.filter(
+      (it) => Array.isArray(it.domains) && it.domains.some((d) => domains.includes(d))
+    );
+  }
   return (
     <section className="relative mx-auto max-w-6xl">
       {/* Central vertical ray */}
@@ -29,29 +44,68 @@ export function Timeline({ items }: { items: TimelineItem[] }) {
         className="pointer-events-none absolute left-1/2 top-0 -ml-px h-full w-px bg-neutral-700/70"
       />
 
-      <ul className="space-y-12">
-        {items.map((it, idx) => (
-          <TimelineRow key={idx} item={it} />
-        ))}
+      <ul>
+        {visible.map((it, idx) => {
+          const prev = visible[idx - 1];
+          const prevCompact = idx > 0 && prev?.level === 1;
+          return (
+            <TimelineRow
+              key={idx}
+              item={it}
+              prevCompact={prevCompact}
+              isFirst={idx === 0}
+              density={maxLevel}
+            />
+          );
+        })}
       </ul>
     </section>
   );
 }
 
-function TimelineRow({ item }: { item: TimelineItem }) {
+function TimelineRow({
+  item,
+  prevCompact,
+  isFirst,
+  density = 1,
+}: {
+  item: TimelineItem;
+  prevCompact?: boolean;
+  isFirst?: boolean;
+  density?: number; // mirrors maxLevel for spacing/dot size adjustments
+}) {
   const [open, setOpen] = React.useState(false);
+  const compact = item.level === density && density >= 1;
+  const compactGap = density >= 3 ? "mt-2" : density >= 2 ? "mt-3" : "mt-4";
+  const fullGap = density >= 3 ? "mt-8" : density >= 2 ? "mt-10" : "mt-12";
+  const rowSpacing = isFirst ? "" : compact && prevCompact ? compactGap : fullGap;
 
   return (
-    <li className="group grid grid-cols-[1fr_2rem_1fr] gap-6 sm:gap-10 items-start">
+    <li className={`group grid grid-cols-[1fr_2rem_1fr] gap-6 sm:gap-10 items-start ${rowSpacing}`}>
       {/* Year (left) */}
-      <div className="text-right text-neutral-300 tabular-nums select-none leading-6">
+      <div
+        className={
+          compact
+            ? density >= 2
+              ? "text-right text-neutral-400/70 tabular-nums select-none leading-4 text-[10px]"
+              : "text-right text-neutral-400/80 tabular-nums select-none leading-5 text-xs"
+            : "text-right text-neutral-300 tabular-nums select-none leading-6"
+        }
+      >
         {item.year}
       </div>
 
       {/* Dot on the ray */}
       <div className="relative flex items-start justify-center">
         <span
-          className="z-10 mt-1 block h-2.5 w-2.5 rounded-full bg-white ring-4 ring-black"
+          className={
+            "z-10 mt-1 block rounded-full bg-white " +
+            (compact
+              ? density >= 2
+                ? "h-1 w-1 ring-2 ring-black/50 opacity-60"
+                : "h-1.5 w-1.5 ring-2 ring-black/60 opacity-70"
+              : "h-2.5 w-2.5 ring-4 ring-black")
+          }
           aria-hidden
         />
       </div>
@@ -59,17 +113,19 @@ function TimelineRow({ item }: { item: TimelineItem }) {
       {/* Content (right) */}
       <div>
         <div className="flex items-start gap-3">
-          <h3 className="text-base sm:text-lg font-medium">{item.title}</h3>
-          <button
-            onClick={() => setOpen((v) => !v)}
-            className="ml-auto text-xs rounded px-2 py-1 bg-white/5 text-neutral-200 opacity-0 group-hover:opacity-100 transition-opacity border border-white/10 hover:bg-white/10"
-            aria-expanded={open}
-          >
-            {open ? "Hide" : "More"}
-          </button>
+          <h3 className={compact ? "text-sm font-medium text-neutral-200" : "text-base sm:text-lg font-medium"}>{item.title}</h3>
+          {!compact && (
+            <button
+              onClick={() => setOpen((v) => !v)}
+              className="ml-auto text-xs rounded px-2 py-1 bg-white/5 text-neutral-200 opacity-0 group-hover:opacity-100 transition-opacity border border-white/10 hover:bg-white/10"
+              aria-expanded={open}
+            >
+              {open ? "Hide" : "More"}
+            </button>
+          )}
         </div>
 
-        {(item.domains || item.era || item.people) && (
+        {!compact && (item.domains || item.era || item.people) && (
           <div className="mt-1 flex flex-wrap items-center gap-2">
             {item.domains?.map((d, i) => (
               <span
@@ -103,12 +159,14 @@ function TimelineRow({ item }: { item: TimelineItem }) {
           </div>
         )}
 
-        <MathText
-          text={item.blurb}
-          className="text-sm leading-relaxed text-neutral-300 max-w-prose mt-2"
-        />
+        {!compact && (
+          <MathText
+            text={item.blurb}
+            className="text-sm leading-relaxed text-neutral-300 max-w-prose mt-2"
+          />
+        )}
 
-        {item.image && (
+        {!compact && item.image && (
           <figure className="mt-4 border border-white/10 rounded-md overflow-hidden w-full max-w-xl">
             <Image
               src={item.image.src}
@@ -125,7 +183,7 @@ function TimelineRow({ item }: { item: TimelineItem }) {
           </figure>
         )}
 
-        {open && item.details && (
+        {!compact && open && item.details && (
           <MathText
             text={item.details}
             className="mt-3 text-sm leading-relaxed text-neutral-300/90 max-w-prose"

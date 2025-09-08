@@ -6,9 +6,21 @@
     "title": "Rhind Mathematical Papyrus",
     "blurb": "Egyptian text with arithmetic, fractions, and geometry problems; a window into early algorithmic methods.",
     "details": "Unit-fraction decompositions like $\\tfrac{2}{3} = \\tfrac{1}{2} + \\tfrac{1}{6}$ illustrate computational practice.",
-    "domains": ["Arithmetic", "Geometry", "History"],
-    "people": [{ "name": "Ahmose" }],
-    "tags": ["papyrus", "unit fractions"]
+    "domains": [
+      "Arithmetic",
+      "Geometry",
+      "History"
+    ],
+    "people": [
+      {
+        "name": "Ahmose"
+      }
+    ],
+    "tags": [
+      "papyrus",
+      "unit fractions"
+    ],
+    "level": 0
   },
   {
     "id": "sulba-sutras-800-500-bce",
@@ -17,9 +29,21 @@
     "title": "Sulba Sutras",
     "blurb": "Ancient Indian geometric rules for altar constructions, including early statements of the Pythagorean relation.",
     "details": "A form of $a^2 + b^2 = c^2$ appears in geometric constructions and area computations.",
-    "domains": ["Geometry"],
-    "people": [{ "name": "Baudhayana" }, { "name": "Apastamba" }],
-    "seeAlso": ["pythagorean-theorem-530-bce"]
+    "domains": [
+      "Geometry"
+    ],
+    "people": [
+      {
+        "name": "Baudhayana"
+      },
+      {
+        "name": "Apastamba"
+      }
+    ],
+    "seeAlso": [
+      "pythagorean-theorem-530-bce"
+    ],
+    "level": 0
   },
   {
     "id": "pythagorean-theorem-530-bce",
@@ -28,10 +52,23 @@
     "title": "Pythagorean Theorem",
     "blurb": "The Pythagorean school studies integer triples and the right-triangle relation central to Greek geometry.",
     "details": "Right triangle relation: $a^2 + b^2 = c^2$; integer solutions like $(3,4,5)$.",
-    "domains": ["Geometry", "Number Theory"],
-    "people": [{ "name": "Pythagoras" }],
-    "tags": ["triangles", "triples"],
-    "seeAlso": ["euclids-elements-300-bce"]
+    "domains": [
+      "Geometry",
+      "Number Theory"
+    ],
+    "people": [
+      {
+        "name": "Pythagoras"
+      }
+    ],
+    "tags": [
+      "triangles",
+      "triples"
+    ],
+    "seeAlso": [
+      "euclids-elements-300-bce"
+    ],
+    "level": 0
   },
   {
     "id": "euclids-elements-300-bce",
@@ -40,10 +77,24 @@
     "title": "Euclid's Elements",
     "blurb": "Axiomatic treatment of geometry and number theory; the classical model for deductive structure.",
     "details": "Proof of infinitude of primes and geometry from postulates; Book VII–IX cover number theory.",
-    "image": { "src": "/placeholder-figure.svg", "caption": "Euclid's axiomatic approach shapes mathematics" },
-    "domains": ["Geometry", "Foundations", "Number Theory"],
-    "people": [{ "name": "Euclid" }],
-    "seeAlso": ["non-euclidean-geometry-1832"]
+    "image": {
+      "src": "/placeholder-figure.svg",
+      "caption": "Euclid's axiomatic approach shapes mathematics"
+    },
+    "domains": [
+      "Geometry",
+      "Foundations",
+      "Number Theory"
+    ],
+    "people": [
+      {
+        "name": "Euclid"
+      }
+    ],
+    "seeAlso": [
+      "non-euclidean-geometry-1832"
+    ],
+    "level": 0
   },
   {
     "id": "archimedes-method-of-exhaustion-250-bce",
@@ -52,9 +103,20 @@
     "title": "Archimedes' Method of Exhaustion",
     "blurb": "Rigorous area and volume computations foreshadowing integral calculus; estimates for $\\pi$.",
     "details": "Polygon bounds give $3\\tfrac{10}{71} < \\pi < 3\\tfrac{1}{7}$.",
-    "domains": ["Analysis", "Geometry"],
-    "people": [{ "name": "Archimedes" }],
-    "seeAlso": ["newton-calculus-notes-1666", "leibniz-differential-calculus-1684"]
+    "domains": [
+      "Analysis",
+      "Geometry"
+    ],
+    "people": [
+      {
+        "name": "Archimedes"
+      }
+    ],
+    "seeAlso": [
+      "newton-calculus-notes-1666",
+      "leibniz-differential-calculus-1684"
+    ],
+    "level": 0
   },
   {
     "id": "eratosthenes-sieve-240-bce",
@@ -63,8 +125,16 @@
     "title": "Eratosthenes' Sieve",
     "blurb": "Systematic sieve to enumerate primes, a prototype for algorithmic number theory.",
     "details": "Iteratively mark multiples to list primes $2,3,5,7,11,\\dots$.",
-    "domains": ["Number Theory", "Algorithms"],
-    "people": [{ "name": "Eratosthenes" }]
+    "domains": [
+      "Number Theory",
+      "Algorithms"
+    ],
+    "people": [
+      {
+        "name": "Eratosthenes"
+      }
+    ],
+    "level": 0
   },
   {
     "id": "diophantus-arithmetica-250-ce",
@@ -73,9 +143,20 @@
     "title": "Diophantus' Arithmetica",
     "blurb": "Collection on rational solutions of polynomial equations, inspiring later number theory.",
     "details": "Diophantine problems seek integer/rational solutions to $f(x_1,\\dots,x_n)=0$.",
-    "domains": ["Number Theory", "Algebra"],
-    "people": [{ "name": "Diophantus" }],
-    "seeAlso": ["hilbert-tenth-problem-negative-1970", "wiles-fermat-1994"]
+    "domains": [
+      "Number Theory",
+      "Algebra"
+    ],
+    "people": [
+      {
+        "name": "Diophantus"
+      }
+    ],
+    "seeAlso": [
+      "hilbert-tenth-problem-negative-1970",
+      "wiles-fermat-1994"
+    ],
+    "level": 0
   },
   {
     "id": "brahmagupta-zero-628",
@@ -84,9 +165,19 @@
     "title": "Brahmagupta and Zero",
     "blurb": "Rules for zero and negative numbers; methods for quadratic equations and astronomy.",
     "details": "Quadratic formula appears in verse; operations include $a+0=a$ and $a\\cdot 0=0$.",
-    "domains": ["Algebra", "Number Theory"],
-    "people": [{ "name": "Brahmagupta" }],
-    "seeAlso": ["cardano-ars-magna-1545"]
+    "domains": [
+      "Algebra",
+      "Number Theory"
+    ],
+    "people": [
+      {
+        "name": "Brahmagupta"
+      }
+    ],
+    "seeAlso": [
+      "cardano-ars-magna-1545"
+    ],
+    "level": 0
   },
   {
     "id": "al-khwarizmi-algebra-820",
@@ -95,9 +186,18 @@
     "title": "Al-Khwarizmi's Algebra",
     "blurb": "Systematic solution of linear and quadratic equations; the term 'algebra' and 'algorithm' trace to his work.",
     "details": "Completing the square solves $ax^2+bx=c$, leading to $x=\\frac{-b+\\sqrt{b^2+4ac}}{2a}$.",
-    "domains": ["Algebra"],
-    "people": [{ "name": "Muhammad ibn Musa al-Khwarizmi" }],
-    "seeAlso": ["viete-symbolic-algebra-1591"]
+    "domains": [
+      "Algebra"
+    ],
+    "people": [
+      {
+        "name": "Muhammad ibn Musa al-Khwarizmi"
+      }
+    ],
+    "seeAlso": [
+      "viete-symbolic-algebra-1591"
+    ],
+    "level": 0
   },
   {
     "id": "fibonacci-liber-abaci-1202",
@@ -106,8 +206,16 @@
     "title": "Fibonacci's Liber Abaci",
     "blurb": "Introduces Hindu–Arabic numerals to Europe; commercial arithmetic and the Fibonacci sequence.",
     "details": "Rabbit problem yields $F_{n+1}=F_n+F_{n-1}$ with $F_1=F_2=1$.",
-    "domains": ["Number Theory", "Arithmetic"],
-    "people": [{ "name": "Leonardo of Pisa (Fibonacci)" }]
+    "domains": [
+      "Number Theory",
+      "Arithmetic"
+    ],
+    "people": [
+      {
+        "name": "Leonardo of Pisa (Fibonacci)"
+      }
+    ],
+    "level": 0
   },
   {
     "id": "cardano-ars-magna-1545",
@@ -116,14 +224,30 @@
     "title": "Cardano's Ars Magna",
     "blurb": "General solutions for cubic and quartic equations; complex numbers emerge in intermediate steps.",
     "details": "Cubic $x^3+px=q$ solved via radicals; Bombelli clarifies complex arithmetic later.",
-    "domains": ["Algebra"],
-    "people": [
-      { "name": "Gerolamo Cardano" },
-      { "name": "Niccolò Tartaglia", "role": "methods" },
-      { "name": "Lodovico Ferrari", "role": "quartic" },
-      { "name": "Rafael Bombelli", "role": "complex arithmetic" }
+    "domains": [
+      "Algebra"
     ],
-    "seeAlso": ["viete-symbolic-algebra-1591"]
+    "people": [
+      {
+        "name": "Gerolamo Cardano"
+      },
+      {
+        "name": "Niccolò Tartaglia",
+        "role": "methods"
+      },
+      {
+        "name": "Lodovico Ferrari",
+        "role": "quartic"
+      },
+      {
+        "name": "Rafael Bombelli",
+        "role": "complex arithmetic"
+      }
+    ],
+    "seeAlso": [
+      "viete-symbolic-algebra-1591"
+    ],
+    "level": 0
   },
   {
     "id": "viete-symbolic-algebra-1591",
@@ -132,9 +256,35 @@
     "title": "Viète's Symbolic Algebra",
     "blurb": "Systematic use of symbols for unknowns and parameters, enabling general algebraic manipulation.",
     "details": "Letters represent magnitudes; relations become transformable expressions.",
-    "domains": ["Algebra"],
-    "people": [{ "name": "François Viète" }],
-    "seeAlso": ["descartes-analytic-geometry-1637"]
+    "domains": [
+      "Algebra"
+    ],
+    "people": [
+      {
+        "name": "François Viète"
+      }
+    ],
+    "seeAlso": [
+      "descartes-analytic-geometry-1637"
+    ],
+    "level": 0
+  },
+  {
+    "id": "napier-logarithms-1614",
+    "year": "1614",
+    "era": "Early Modern",
+    "title": "Napier's Logarithms",
+    "blurb": "Logarithms simplify multiplication and pave the way for slide rules and analytic computation.",
+    "level": 1,
+    "domains": [
+      "Analysis",
+      "Computation"
+    ],
+    "people": [
+      {
+        "name": "John Napier"
+      }
+    ]
   },
   {
     "id": "descartes-analytic-geometry-1637",
@@ -143,8 +293,19 @@
     "title": "Descartes' Analytic Geometry",
     "blurb": "Coordinates link algebra and geometry; curves expressed as equations in $x,y$.",
     "details": "Lines have equations like $y=mx+b$; conics by quadratic equations.",
-    "domains": ["Geometry", "Algebra"],
-    "people": [{ "name": "René Descartes" }, { "name": "Pierre de Fermat" }]
+    "domains": [
+      "Geometry",
+      "Algebra"
+    ],
+    "people": [
+      {
+        "name": "René Descartes"
+      },
+      {
+        "name": "Pierre de Fermat"
+      }
+    ],
+    "level": 0
   },
   {
     "id": "newton-calculus-notes-1666",
@@ -153,9 +314,18 @@
     "title": "Newton's Calculus (notes)",
     "blurb": "During the plague years Newton develops fluxions and the binomial series; parallel work by Leibniz soon after.",
     "details": "Derivative and integral as inverse processes; $\\frac{d}{dx}x^n=nx^{n-1}$.",
-    "domains": ["Analysis"],
-    "people": [{ "name": "Isaac Newton" }],
-    "seeAlso": ["leibniz-differential-calculus-1684"]
+    "domains": [
+      "Analysis"
+    ],
+    "people": [
+      {
+        "name": "Isaac Newton"
+      }
+    ],
+    "seeAlso": [
+      "leibniz-differential-calculus-1684"
+    ],
+    "level": 0
   },
   {
     "id": "leibniz-differential-calculus-1684",
@@ -164,9 +334,18 @@
     "title": "Leibniz on Differential Calculus",
     "blurb": "Leibniz publishes his differential calculus with the enduring notation $dx,dy$ and $\\int$.",
     "details": "Product rule: $d(uv)=u\\,dv+v\\,du$; integral sign from long S for 'summa'.",
-    "domains": ["Analysis"],
-    "people": [{ "name": "Gottfried Wilhelm Leibniz" }],
-    "seeAlso": ["newton-principia-1687"]
+    "domains": [
+      "Analysis"
+    ],
+    "people": [
+      {
+        "name": "Gottfried Wilhelm Leibniz"
+      }
+    ],
+    "seeAlso": [
+      "newton-principia-1687"
+    ],
+    "level": 0
   },
   {
     "id": "newton-principia-1687",
@@ -175,8 +354,16 @@
     "title": "Newton's Principia",
     "blurb": "Foundations of classical mechanics using geometric arguments; calculus underlies the methods.",
     "details": "Inverse-square law yields conic orbits; Kepler's third law $T^2 \\propto a^3$.",
-    "domains": ["Mechanics", "Analysis"],
-    "people": [{ "name": "Isaac Newton" }]
+    "domains": [
+      "Mechanics",
+      "Analysis"
+    ],
+    "people": [
+      {
+        "name": "Isaac Newton"
+      }
+    ],
+    "level": 0
   },
   {
     "id": "law-of-large-numbers-1713",
@@ -185,9 +372,18 @@
     "title": "Law of Large Numbers",
     "blurb": "Jacob Bernoulli's posthumous Ars Conjectandi formalizes long-run frequency convergence.",
     "details": "For i.i.d. Bernoulli($p$): $\\bar X_n \\to p$ in probability.",
-    "domains": ["Probability"],
-    "people": [{ "name": "Jacob Bernoulli" }],
-    "seeAlso": ["shannon-information-theory-1948"]
+    "domains": [
+      "Probability"
+    ],
+    "people": [
+      {
+        "name": "Jacob Bernoulli"
+      }
+    ],
+    "seeAlso": [
+      "shannon-information-theory-1948"
+    ],
+    "level": 0
   },
   {
     "id": "bridges-of-konigsberg-1736",
@@ -196,9 +392,19 @@
     "title": "Euler and the Bridges of Königsberg",
     "blurb": "Birth of graph theory and topology from a recreational puzzle about traversing bridges once.",
     "details": "Degree parity criterion: an Eulerian circuit requires every vertex to have even degree.",
-    "domains": ["Graph Theory", "Topology"],
-    "people": [{ "name": "Leonhard Euler" }],
-    "seeAlso": ["four-color-theorem-1976"]
+    "domains": [
+      "Graph Theory",
+      "Topology"
+    ],
+    "people": [
+      {
+        "name": "Leonhard Euler"
+      }
+    ],
+    "seeAlso": [
+      "four-color-theorem-1976"
+    ],
+    "level": 0
   },
   {
     "id": "euler-introductio-1748",
@@ -207,9 +413,39 @@
     "title": "Euler's Introductio",
     "blurb": "Functions take center stage; exponential and trigonometric connections crystallize.",
     "details": "Euler's identity: $e^{i\\pi}+1=0$ encapsulates key constants and operations.",
-    "domains": ["Analysis", "Complex"],
-    "people": [{ "name": "Leonhard Euler" }],
-    "seeAlso": ["fundamental-theorem-of-algebra-1799"]
+    "domains": [
+      "Analysis",
+      "Complex"
+    ],
+    "people": [
+      {
+        "name": "Leonhard Euler"
+      }
+    ],
+    "seeAlso": [
+      "fundamental-theorem-of-algebra-1799"
+    ],
+    "level": 0
+  },
+  {
+    "id": "bayes-theorem-1763",
+    "year": "1763",
+    "era": "18th Century",
+    "title": "Bayes' Theorem",
+    "blurb": "Posthumous essay introduces inverse probability; cornerstone of Bayesian inference.",
+    "level": 1,
+    "domains": [
+      "Probability",
+      "Statistics"
+    ],
+    "people": [
+      {
+        "name": "Thomas Bayes"
+      },
+      {
+        "name": "Richard Price"
+      }
+    ]
   },
   {
     "id": "fundamental-theorem-of-algebra-1799",
@@ -218,9 +454,19 @@
     "title": "Fundamental Theorem of Algebra",
     "blurb": "Gauss shows every non-constant complex polynomial has a complex root (first proof, later made rigorous).",
     "details": "$p(z) \\in \\mathbb C[z]$ of degree $n$ factors into $n$ linear terms over $\\mathbb C$.",
-    "domains": ["Complex Analysis", "Algebra"],
-    "people": [{ "name": "Carl Friedrich Gauss" }],
-    "seeAlso": ["euler-introductio-1748"]
+    "domains": [
+      "Complex Analysis",
+      "Algebra"
+    ],
+    "people": [
+      {
+        "name": "Carl Friedrich Gauss"
+      }
+    ],
+    "seeAlso": [
+      "euler-introductio-1748"
+    ],
+    "level": 0
   },
   {
     "id": "disquisitiones-arithmeticae-1801",
@@ -229,9 +475,19 @@
     "title": "Disquisitiones Arithmeticae",
     "blurb": "Gauss founds modern number theory: congruences, quadratic reciprocity, binary quadratic forms.",
     "details": "Quadratic reciprocity relates solvability of $x^2 \\equiv p \\pmod q$ and $x^2 \\equiv q \\pmod p$.",
-    "domains": ["Number Theory"],
-    "people": [{ "name": "Carl Friedrich Gauss" }],
-    "seeAlso": ["wiles-fermat-1994", "bounded-prime-gaps-2013"]
+    "domains": [
+      "Number Theory"
+    ],
+    "people": [
+      {
+        "name": "Carl Friedrich Gauss"
+      }
+    ],
+    "seeAlso": [
+      "wiles-fermat-1994",
+      "bounded-prime-gaps-2013"
+    ],
+    "level": 0
   },
   {
     "id": "cauchy-cours-danalyse-1821",
@@ -240,9 +496,18 @@
     "title": "Cauchy's Cours d'Analyse",
     "blurb": "Rigorous epsilon–delta foundations for limits, continuity, series, and differentiation.",
     "details": "Definition: $f$ continuous at $a$ if $\\forall \\varepsilon \\exists \\delta: |x-a|<\\delta \\Rightarrow |f(x)-f(a)|<\\varepsilon$.",
-    "domains": ["Analysis"],
-    "people": [{ "name": "Augustin-Louis Cauchy" }],
-    "seeAlso": ["riemann-habilitation-1854"]
+    "domains": [
+      "Analysis"
+    ],
+    "people": [
+      {
+        "name": "Augustin-Louis Cauchy"
+      }
+    ],
+    "seeAlso": [
+      "riemann-habilitation-1854"
+    ],
+    "level": 0
   },
   {
     "id": "fourier-heat-theory-1822",
@@ -251,8 +516,16 @@
     "title": "Fourier's Heat Theory",
     "blurb": "Partial differential equations and trigonometric series enter analysis and physics.",
     "details": "Heat equation $u_t=\\alpha u_{xx}$ with series solutions $u(x,t)=\\sum c_n e^{-\\alpha n^2 \\pi^2 t} \\sin(n\\pi x)$.",
-    "domains": ["Analysis", "PDE"],
-    "people": [{ "name": "Joseph Fourier" }]
+    "domains": [
+      "Analysis",
+      "PDE"
+    ],
+    "people": [
+      {
+        "name": "Joseph Fourier"
+      }
+    ],
+    "level": 0
   },
   {
     "id": "non-euclidean-geometry-1832",
@@ -261,9 +534,22 @@
     "title": "Non-Euclidean Geometry",
     "blurb": "Bolyai and Lobachevsky develop consistent geometries with a negation of Euclid's parallel postulate.",
     "details": "Hyperbolic geometry: through a point off a line, infinitely many parallels exist.",
-    "domains": ["Geometry"],
-    "people": [{ "name": "János Bolyai" }, { "name": "Nikolai Lobachevsky" }],
-    "seeAlso": ["riemann-habilitation-1854", "euclids-elements-300-bce"]
+    "domains": [
+      "Geometry"
+    ],
+    "people": [
+      {
+        "name": "János Bolyai"
+      },
+      {
+        "name": "Nikolai Lobachevsky"
+      }
+    ],
+    "seeAlso": [
+      "riemann-habilitation-1854",
+      "euclids-elements-300-bce"
+    ],
+    "level": 0
   },
   {
     "id": "hamilton-quaternions-1843",
@@ -272,8 +558,15 @@
     "title": "Hamilton's Quaternions",
     "blurb": "First noncommutative division algebra; expands algebraic structures beyond complex numbers.",
     "details": "$i^2=j^2=k^2=ijk=-1$ with $ij=k$, $ji=-k$, etc.",
-    "domains": ["Algebra"],
-    "people": [{ "name": "William Rowan Hamilton" }]
+    "domains": [
+      "Algebra"
+    ],
+    "people": [
+      {
+        "name": "William Rowan Hamilton"
+      }
+    ],
+    "level": 0
   },
   {
     "id": "riemann-habilitation-1854",
@@ -282,9 +575,57 @@
     "title": "Riemann's Habilitation",
     "blurb": "Manifolds and Riemannian metrics generalize geometry; curvature enters intrinsic differential geometry.",
     "details": "Metric tensor $g$ defines lengths; curvature via Riemann tensor $R^i_{\\ jkl}$.",
-    "domains": ["Geometry", "Analysis", "Topology"],
-    "people": [{ "name": "Bernhard Riemann" }],
-    "seeAlso": ["perelman-poincare-2002-2003"]
+    "domains": [
+      "Geometry",
+      "Analysis",
+      "Topology"
+    ],
+    "people": [
+      {
+        "name": "Bernhard Riemann"
+      }
+    ],
+    "seeAlso": [
+      "perelman-poincare-2002-2003"
+    ],
+    "level": 0
+  },
+  {
+    "id": "sylow-theorems-1872",
+    "year": "1872",
+    "era": "19th Century",
+    "title": "Sylow Theorems",
+    "blurb": "Classifies p-subgroups in finite groups; central to group structure.",
+    "level": 1,
+    "domains": [
+      "Algebra"
+    ],
+    "people": [
+      {
+        "name": "Ludvig Sylow"
+      }
+    ]
+  },
+  {
+    "id": "riemann-hypothesis-1859",
+    "year": "1859",
+    "era": "19th Century",
+    "title": "Riemann Hypothesis (proposed)",
+    "blurb": "Zeros of $\\zeta(s)$ on $\\Re(s)=1/2$ govern prime distribution; central open problem.",
+    "level": 1,
+    "domains": [
+      "Number Theory",
+      "Complex Analysis"
+    ],
+    "people": [
+      {
+        "name": "Bernhard Riemann"
+      }
+    ],
+    "seeAlso": [
+      "disquisitiones-arithmeticae-1801",
+      "bounded-prime-gaps-2013"
+    ]
   },
   {
     "id": "cantor-uncountability-1874",
@@ -293,9 +634,61 @@
     "title": "Cantor's Uncountability of the Reals",
     "blurb": "Set theory emerges; reals are uncountable while rationals are countable.",
     "details": "Diagonalization shows no bijection $\\mathbb N \\to \\mathbb R$. Many infinities exist.",
-    "domains": ["Set Theory", "Foundations"],
-    "people": [{ "name": "Georg Cantor" }],
-    "seeAlso": ["cohen-ch-independence-1963", "zermelo-axioms-1908"]
+    "domains": [
+      "Set Theory",
+      "Foundations"
+    ],
+    "people": [
+      {
+        "name": "Georg Cantor"
+      }
+    ],
+    "seeAlso": [
+      "cohen-ch-independence-1963",
+      "zermelo-axioms-1908"
+    ],
+    "level": 0
+  },
+  {
+    "id": "jordan-curve-theorem-1887",
+    "year": "1887",
+    "era": "19th Century",
+    "title": "Jordan Curve Theorem",
+    "blurb": "Every simple closed curve in the plane separates it into inside and outside regions.",
+    "level": 1,
+    "domains": [
+      "Topology",
+      "Geometry"
+    ],
+    "people": [
+      {
+        "name": "Camille Jordan"
+      }
+    ]
+  },
+  {
+    "id": "prime-number-theorem-1896",
+    "year": "1896",
+    "era": "19th Century",
+    "title": "Prime Number Theorem",
+    "blurb": "$\\pi(x) \\sim x/\\log x$ proven by Hadamard and de la Vallée Poussin using complex analysis.",
+    "level": 1,
+    "domains": [
+      "Number Theory",
+      "Analysis"
+    ],
+    "people": [
+      {
+        "name": "Jacques Hadamard"
+      },
+      {
+        "name": "Charles Jean de la Vallée Poussin"
+      }
+    ],
+    "seeAlso": [
+      "riemann-hypothesis-1859",
+      "disquisitiones-arithmeticae-1801"
+    ]
   },
   {
     "id": "foundations-set-geometry-1895-1899",
@@ -304,9 +697,23 @@
     "title": "Foundations of Set Theory and Geometry",
     "blurb": "Cantor's axiomatic set theory (1895–97) and Hilbert's Grundlagen (1899) formalize central foundations.",
     "details": "Axioms constrain naive comprehension; independence questions soon arise.",
-    "domains": ["Set Theory", "Foundations", "Geometry"],
-    "people": [{ "name": "Georg Cantor" }, { "name": "David Hilbert" }],
-    "seeAlso": ["zermelo-axioms-1908"]
+    "domains": [
+      "Set Theory",
+      "Foundations",
+      "Geometry"
+    ],
+    "people": [
+      {
+        "name": "Georg Cantor"
+      },
+      {
+        "name": "David Hilbert"
+      }
+    ],
+    "seeAlso": [
+      "zermelo-axioms-1908"
+    ],
+    "level": 0
   },
   {
     "id": "hilbert-23-problems-1900",
@@ -315,9 +722,20 @@
     "title": "Hilbert's 23 Problems",
     "blurb": "A program-setting list influencing 20th-century research across analysis, algebra, and logic.",
     "details": "Problems span continuum hypothesis, decision procedures, and transcendence.",
-    "domains": ["Foundations", "Analysis", "Number Theory"],
-    "people": [{ "name": "David Hilbert" }],
-    "seeAlso": ["hilbert-tenth-problem-negative-1970"]
+    "domains": [
+      "Foundations",
+      "Analysis",
+      "Number Theory"
+    ],
+    "people": [
+      {
+        "name": "David Hilbert"
+      }
+    ],
+    "seeAlso": [
+      "hilbert-tenth-problem-negative-1970"
+    ],
+    "level": 0
   },
   {
     "id": "zermelo-axioms-1908",
@@ -326,9 +744,46 @@
     "title": "Zermelo's Axioms (ZFC beginnings)",
     "blurb": "Axiomatic set theory stabilizes with separation and choice; extended by Fraenkel and Skolem to ZFC.",
     "details": "Axiom of Choice yields Zorn's Lemma and well-ordering principles.",
-    "domains": ["Set Theory", "Logic"],
-    "people": [{ "name": "Ernst Zermelo" }, { "name": "Abraham Fraenkel" }, { "name": "Thoralf Skolem" }],
-    "seeAlso": ["cohen-ch-independence-1963", "principia-mathematica-1910-1913"]
+    "domains": [
+      "Set Theory",
+      "Logic"
+    ],
+    "people": [
+      {
+        "name": "Ernst Zermelo"
+      },
+      {
+        "name": "Abraham Fraenkel"
+      },
+      {
+        "name": "Thoralf Skolem"
+      }
+    ],
+    "seeAlso": [
+      "cohen-ch-independence-1963",
+      "principia-mathematica-1910-1913"
+    ],
+    "level": 0
+  },
+  {
+    "id": "noether-theorem-1918",
+    "year": "1918",
+    "era": "20th Century",
+    "title": "Noether's Theorem",
+    "blurb": "Symmetries yield conserved quantities in variational problems; deep link between algebra and physics.",
+    "level": 1,
+    "domains": [
+      "Calculus of Variations",
+      "Geometry"
+    ],
+    "people": [
+      {
+        "name": "Emmy Noether"
+      }
+    ],
+    "seeAlso": [
+      "newton-principia-1687"
+    ]
   },
   {
     "id": "principia-mathematica-1910-1913",
@@ -337,9 +792,60 @@
     "title": "Russell–Whitehead's Principia Mathematica",
     "blurb": "Logicist project to derive mathematics from symbolic logic; advances type theory and formal proof.",
     "details": "Hundreds of pages to reach $1+1=2$ highlight foundational ambitions and limits.",
-    "domains": ["Logic", "Foundations"],
-    "people": [{ "name": "Bertrand Russell" }, { "name": "Alfred North Whitehead" }],
-    "seeAlso": ["godel-incompleteness-1931", "turing-computability-1936"]
+    "domains": [
+      "Logic",
+      "Foundations"
+    ],
+    "people": [
+      {
+        "name": "Bertrand Russell"
+      },
+      {
+        "name": "Alfred North Whitehead"
+      }
+    ],
+    "seeAlso": [
+      "godel-incompleteness-1931",
+      "turing-computability-1936"
+    ],
+    "level": 0
+  },
+  {
+    "id": "noether-ideal-theory-1921",
+    "year": "1921",
+    "era": "20th Century",
+    "title": "Noether's Ideal Theory",
+    "blurb": "Abstract algebra of ideals in rings; ascending chain condition and Noetherian rings.",
+    "level": 1,
+    "domains": [
+      "Algebra"
+    ],
+    "people": [
+      {
+        "name": "Emmy Noether"
+      }
+    ]
+  },
+  {
+    "id": "completeness-theorem-1930",
+    "year": "1930",
+    "era": "20th Century",
+    "title": "Gödel Completeness Theorem",
+    "blurb": "First-order logic: syntactic provability equals semantic validity (every consistent theory has a model).",
+    "level": 1,
+    "domains": [
+      "Logic",
+      "Foundations"
+    ],
+    "people": [
+      {
+        "name": "Kurt Gödel"
+      }
+    ],
+    "seeAlso": [
+      "principia-mathematica-1910-1913",
+      "godel-incompleteness-1931"
+    ]
   },
   {
     "id": "godel-incompleteness-1931",
@@ -348,9 +854,79 @@
     "title": "Gödel's Incompleteness Theorems",
     "blurb": "Any consistent, sufficiently strong formal system cannot prove all truths about arithmetic; cannot prove its own consistency.",
     "details": "Self-referential sentence $G$ with $G \\leftrightarrow \\neg\\mathrm{Prov}(\\ulcorner G\\urcorner)$.",
-    "domains": ["Logic", "Foundations"],
-    "people": [{ "name": "Kurt Gödel" }],
-    "seeAlso": ["principia-mathematica-1910-1913", "zermelo-axioms-1908"]
+    "domains": [
+      "Logic",
+      "Foundations"
+    ],
+    "people": [
+      {
+        "name": "Kurt Gödel"
+      }
+    ],
+    "seeAlso": [
+      "principia-mathematica-1910-1913",
+      "zermelo-axioms-1908"
+    ],
+    "level": 0
+  },
+  {
+    "id": "kolmogorov-foundations-1933",
+    "year": "1933",
+    "era": "20th Century",
+    "title": "Kolmogorov Axioms of Probability",
+    "blurb": "Measure-theoretic foundations put probability on firm axiomatic footing.",
+    "level": 1,
+    "domains": [
+      "Probability",
+      "Measure Theory"
+    ],
+    "people": [
+      {
+        "name": "Andrey Kolmogorov"
+      }
+    ]
+  },
+  {
+    "id": "banach-tarski-1924",
+    "year": "1924",
+    "era": "20th Century",
+    "title": "Banach–Tarski Paradox",
+    "blurb": "Using Choice, a ball can be partitioned into finitely many pieces and reassembled into two copies.",
+    "level": 1,
+    "domains": [
+      "Set Theory",
+      "Geometry"
+    ],
+    "people": [
+      {
+        "name": "Stefan Banach"
+      },
+      {
+        "name": "Alfred Tarski"
+      }
+    ],
+    "seeAlso": [
+      "zermelo-axioms-1908"
+    ]
+  },
+  {
+    "id": "hahn-banach-1927",
+    "year": "1927",
+    "era": "20th Century",
+    "title": "Hahn–Banach Theorem",
+    "blurb": "Extension of linear functionals; cornerstone of functional analysis and duality.",
+    "level": 1,
+    "domains": [
+      "Functional Analysis"
+    ],
+    "people": [
+      {
+        "name": "Hans Hahn"
+      },
+      {
+        "name": "Stefan Banach"
+      }
+    ]
   },
   {
     "id": "turing-computability-1936",
@@ -359,9 +935,80 @@
     "title": "Turing and Computability",
     "blurb": "Turing machines formalize algorithms; the halting problem is undecidable; Church–Turing thesis emerges.",
     "details": "No algorithm decides halting for all programs; reductions prove undecidability widely.",
-    "domains": ["Computability", "Logic", "CS Theory"],
-    "people": [{ "name": "Alan Turing" }, { "name": "Alonzo Church" }],
-    "seeAlso": ["np-completeness-1971-1972", "hilbert-tenth-problem-negative-1970"]
+    "domains": [
+      "Computability",
+      "Logic",
+      "CS Theory"
+    ],
+    "people": [
+      {
+        "name": "Alan Turing"
+      },
+      {
+        "name": "Alonzo Church"
+      }
+    ],
+    "seeAlso": [
+      "np-completeness-1971-1972",
+      "hilbert-tenth-problem-negative-1970"
+    ],
+    "level": 0
+  },
+  {
+    "id": "eilenberg-maclane-category-theory-1945",
+    "year": "1945",
+    "era": "20th Century",
+    "title": "Category Theory (Eilenberg–Mac Lane)",
+    "blurb": "Functors and natural transformations organize mathematics at a new level of abstraction.",
+    "level": 1,
+    "domains": [
+      "Category Theory"
+    ],
+    "people": [
+      {
+        "name": "Samuel Eilenberg"
+      },
+      {
+        "name": "Saunders Mac Lane"
+      }
+    ]
+  },
+  {
+    "id": "dantzig-simplex-1947",
+    "year": "1947",
+    "era": "20th Century",
+    "title": "Simplex Method",
+    "blurb": "Efficient method for linear programming; launches modern optimization.",
+    "level": 1,
+    "domains": [
+      "Optimization",
+      "Operations Research"
+    ],
+    "people": [
+      {
+        "name": "George Dantzig"
+      }
+    ]
+  },
+  {
+    "id": "monte-carlo-method-1946",
+    "year": "1946",
+    "era": "20th Century",
+    "title": "Monte Carlo Method",
+    "blurb": "Random sampling for numerical estimation; used in physics and computation.",
+    "level": 1,
+    "domains": [
+      "Probability",
+      "Numerical Methods"
+    ],
+    "people": [
+      {
+        "name": "Stanisław Ulam"
+      },
+      {
+        "name": "John von Neumann"
+      }
+    ]
   },
   {
     "id": "shannon-information-theory-1948",
@@ -370,8 +1017,16 @@
     "title": "Shannon's Information Theory",
     "blurb": "Quantifies information and limits of communication; entropy and channel capacity become central.",
     "details": "Binary entropy $H(p)=-p\\log p-(1-p)\\log(1-p)$; capacity bounds reliable transmission.",
-    "domains": ["Information Theory", "Probability"],
-    "people": [{ "name": "Claude Shannon" }]
+    "domains": [
+      "Information Theory",
+      "Probability"
+    ],
+    "people": [
+      {
+        "name": "Claude Shannon"
+      }
+    ],
+    "level": 0
   },
   {
     "id": "nash-equilibrium-1950",
@@ -380,8 +1035,16 @@
     "title": "Nash Equilibrium",
     "blurb": "Every finite game admits a mixed-strategy equilibrium; foundations for modern game theory.",
     "details": "Fixed-point methods show existence of a profile where no player can unilaterally improve.",
-    "domains": ["Game Theory", "Economics"],
-    "people": [{ "name": "John Nash" }]
+    "domains": [
+      "Game Theory",
+      "Economics"
+    ],
+    "people": [
+      {
+        "name": "John Nash"
+      }
+    ],
+    "level": 0
   },
   {
     "id": "grothendieck-schemes-1957",
@@ -390,9 +1053,58 @@
     "title": "Grothendieck's Schemes (emerging)",
     "blurb": "Beginnings of scheme-theoretic algebraic geometry unify number theory and geometry.",
     "details": "A scheme locally looks like $\\\"Spec(A)\\\"$; morphisms encode arithmetic geometry.",
-    "domains": ["Algebraic Geometry", "Number Theory"],
-    "people": [{ "name": "Alexander Grothendieck" }],
-    "seeAlso": ["faltings-mordell-1983", "wiles-fermat-1994", "perfectoid-methods-2018"]
+    "domains": [
+      "Algebraic Geometry",
+      "Number Theory"
+    ],
+    "people": [
+      {
+        "name": "Alexander Grothendieck"
+      }
+    ],
+    "seeAlso": [
+      "faltings-mordell-1983",
+      "wiles-fermat-1994",
+      "perfectoid-methods-2018"
+    ],
+    "level": 0
+  },
+  {
+    "id": "atiyah-singer-1963",
+    "year": "1963",
+    "era": "20th Century",
+    "title": "Atiyah–Singer Index Theorem",
+    "blurb": "Relates analytical index of elliptic operators to topological invariants; unifies analysis and topology.",
+    "level": 1,
+    "domains": [
+      "Topology",
+      "Analysis",
+      "Geometry"
+    ],
+    "people": [
+      {
+        "name": "Michael Atiyah"
+      },
+      {
+        "name": "Isadore Singer"
+      }
+    ]
+  },
+  {
+    "id": "hironaka-resolution-1964",
+    "year": "1964",
+    "era": "20th Century",
+    "title": "Resolution of Singularities",
+    "blurb": "Hironaka proves resolution in characteristic zero; milestone in algebraic geometry.",
+    "level": 1,
+    "domains": [
+      "Algebraic Geometry"
+    ],
+    "people": [
+      {
+        "name": "Heisuke Hironaka"
+      }
+    ]
   },
   {
     "id": "cohen-ch-independence-1963",
@@ -401,9 +1113,20 @@
     "title": "Cohen: Independence of CH",
     "blurb": "Forcing shows the continuum hypothesis and choice are independent of ZF/ZFC (with consistency).",
     "details": "Construct models where CH holds and others where it fails; no ZFC decision.",
-    "domains": ["Set Theory", "Logic"],
-    "people": [{ "name": "Paul Cohen" }],
-    "seeAlso": ["cantor-uncountability-1874", "zermelo-axioms-1908"]
+    "domains": [
+      "Set Theory",
+      "Logic"
+    ],
+    "people": [
+      {
+        "name": "Paul Cohen"
+      }
+    ],
+    "seeAlso": [
+      "cantor-uncountability-1874",
+      "zermelo-axioms-1908"
+    ],
+    "level": 0
   },
   {
     "id": "hilbert-tenth-problem-negative-1970",
@@ -412,14 +1135,29 @@
     "title": "Hilbert's Tenth Problem (negative)",
     "blurb": "Matiyasevich, building on Davis–Putnam–Robinson, proves no algorithm decides integer solvability of Diophantine equations.",
     "details": "Recursively enumerable sets equal Diophantine sets over $\\\"\\mathbb Z\\\"$.",
-    "domains": ["Number Theory", "Computability"],
-    "people": [
-      { "name": "Yuri Matiyasevich" },
-      { "name": "Martin Davis" },
-      { "name": "Hilary Putnam" },
-      { "name": "Julia Robinson" }
+    "domains": [
+      "Number Theory",
+      "Computability"
     ],
-    "seeAlso": ["diophantus-arithmetica-250-ce", "turing-computability-1936"]
+    "people": [
+      {
+        "name": "Yuri Matiyasevich"
+      },
+      {
+        "name": "Martin Davis"
+      },
+      {
+        "name": "Hilary Putnam"
+      },
+      {
+        "name": "Julia Robinson"
+      }
+    ],
+    "seeAlso": [
+      "diophantus-arithmetica-250-ce",
+      "turing-computability-1936"
+    ],
+    "level": 0
   },
   {
     "id": "np-completeness-1971-1972",
@@ -428,9 +1166,45 @@
     "title": "NP-Completeness (Cook–Karp)",
     "blurb": "SAT is NP-complete; many problems shown interreducible, framing the P vs NP question.",
     "details": "Polynomial-time reductions map problems; $\\\"\\mathrm{SAT}\\\"$ as a universal NP search problem.",
-    "domains": ["CS Theory", "Complexity"],
-    "people": [{ "name": "Stephen Cook" }, { "name": "Richard Karp" }, { "name": "Leonid Levin" }],
-    "seeAlso": ["turing-computability-1936"]
+    "domains": [
+      "CS Theory",
+      "Complexity"
+    ],
+    "people": [
+      {
+        "name": "Stephen Cook"
+      },
+      {
+        "name": "Richard Karp"
+      },
+      {
+        "name": "Leonid Levin"
+      }
+    ],
+    "seeAlso": [
+      "turing-computability-1936"
+    ],
+    "level": 0
+  },
+  {
+    "id": "yau-calabi-1976",
+    "year": "1976",
+    "era": "20th Century",
+    "title": "Calabi Conjecture (Yau)",
+    "blurb": "Existence of Kähler–Einstein metrics on compact Kähler manifolds with $c_1=0$ (Calabi–Yau).",
+    "level": 1,
+    "domains": [
+      "Geometry",
+      "PDE"
+    ],
+    "people": [
+      {
+        "name": "Shing-Tung Yau"
+      }
+    ],
+    "seeAlso": [
+      "riemann-habilitation-1854"
+    ]
   },
   {
     "id": "four-color-theorem-1976",
@@ -439,9 +1213,86 @@
     "title": "Four Color Theorem (computer-assisted)",
     "blurb": "Appel and Haken prove every planar map is 4-colorable using extensive computer checking.",
     "details": "Graph coloring bound $\\chi(G) \\le 4$ for planar $G$ via reducible configurations.",
-    "domains": ["Graph Theory", "Combinatorics"],
-    "people": [{ "name": "Kenneth Appel" }, { "name": "Wolfgang Haken" }],
-    "seeAlso": ["bridges-of-konigsberg-1736", "flyspeck-kepler-2014"]
+    "domains": [
+      "Graph Theory",
+      "Combinatorics"
+    ],
+    "people": [
+      {
+        "name": "Kenneth Appel"
+      },
+      {
+        "name": "Wolfgang Haken"
+      }
+    ],
+    "seeAlso": [
+      "bridges-of-konigsberg-1736",
+      "flyspeck-kepler-2014"
+    ],
+    "level": 0
+  },
+  {
+    "id": "rsa-cryptography-1977",
+    "year": "1977",
+    "era": "20th Century",
+    "title": "RSA Public-Key Cryptography",
+    "blurb": "Practical public-key encryption based on integer factorization hardness.",
+    "level": 1,
+    "domains": [
+      "Cryptography",
+      "Number Theory"
+    ],
+    "people": [
+      {
+        "name": "Ron Rivest"
+      },
+      {
+        "name": "Adi Shamir"
+      },
+      {
+        "name": "Leonard Adleman"
+      }
+    ],
+    "seeAlso": [
+      "disquisitiones-arithmeticae-1801"
+    ]
+  },
+  {
+    "id": "thurston-geometrization-1978",
+    "year": "1978",
+    "era": "20th Century",
+    "title": "Thurston's Geometrization Program",
+    "blurb": "Three-manifolds decomposed into geometric pieces; blueprint later completed by Perelman.",
+    "level": 1,
+    "domains": [
+      "Topology",
+      "Geometry"
+    ],
+    "people": [
+      {
+        "name": "William Thurston"
+      }
+    ],
+    "seeAlso": [
+      "perelman-poincare-2002-2003"
+    ]
+  },
+  {
+    "id": "mirror-symmetry-1994",
+    "year": "1994",
+    "era": "20th Century",
+    "title": "Mirror Symmetry (Homological)",
+    "blurb": "Kontsevich’s conjecture links symplectic and complex geometry via derived categories and Fukaya categories.",
+    "level": 1,
+    "domains": [
+      "Algebraic Geometry",
+      "Symplectic Geometry"
+    ],
+    "people": [
+      {
+        "name": "Maxim Kontsevich"
+      }
+    ]
   },
   {
     "id": "faltings-mordell-1983",
@@ -450,9 +1301,95 @@
     "title": "Faltings proves Mordell's Conjecture",
     "blurb": "Curves of genus $g>1$ over $\\mathbb Q$ have finitely many rational points; deep arithmetic geometry.",
     "details": "Uses Arakelov theory and diophantine approximation to bound rational points.",
-    "domains": ["Number Theory", "Algebraic Geometry"],
-    "people": [{ "name": "Gerd Faltings" }],
-    "seeAlso": ["grothendieck-schemes-1957", "wiles-fermat-1994"]
+    "domains": [
+      "Number Theory",
+      "Algebraic Geometry"
+    ],
+    "people": [
+      {
+        "name": "Gerd Faltings"
+      }
+    ],
+    "seeAlso": [
+      "grothendieck-schemes-1957",
+      "wiles-fermat-1994"
+    ],
+    "level": 0
+  },
+  {
+    "id": "pcp-theorem-1991-1994",
+    "year": "1991–1994",
+    "era": "20th Century",
+    "title": "PCP Theorem",
+    "blurb": "NP admits probabilistically checkable proofs; hardness of approximation framework.",
+    "level": 1,
+    "domains": [
+      "Complexity",
+      "CS Theory"
+    ],
+    "people": [
+      {
+        "name": "Sanjeev Arora"
+      },
+      {
+        "name": "Shmuel Safra"
+      },
+      {
+        "name": "Carsten Lund"
+      },
+      {
+        "name": "Rajeev Motwani"
+      },
+      {
+        "name": "Madhu Sudan"
+      }
+    ],
+    "seeAlso": [
+      "np-completeness-1971-1972"
+    ]
+  },
+  {
+    "id": "shor-algorithm-1994",
+    "year": "1994",
+    "era": "20th Century",
+    "title": "Shor's Factoring Algorithm",
+    "blurb": "Quantum algorithm factors integers in polynomial time, impacting cryptography.",
+    "level": 1,
+    "domains": [
+      "Quantum Computing",
+      "Number Theory"
+    ],
+    "people": [
+      {
+        "name": "Peter Shor"
+      }
+    ],
+    "seeAlso": [
+      "rsa-cryptography-1977"
+    ]
+  },
+  {
+    "id": "aks-primality-2002",
+    "year": "2002",
+    "era": "21st Century",
+    "title": "AKS Primality Test",
+    "blurb": "First unconditional polynomial-time primality test.",
+    "level": 1,
+    "domains": [
+      "Number Theory",
+      "Algorithms"
+    ],
+    "people": [
+      {
+        "name": "Manindra Agrawal"
+      },
+      {
+        "name": "Neeraj Kayal"
+      },
+      {
+        "name": "Nitin Saxena"
+      }
+    ]
   },
   {
     "id": "wiles-fermat-1994",
@@ -461,9 +1398,47 @@
     "title": "Wiles proves Fermat's Last Theorem",
     "blurb": "All exponents $n>2$ have no nontrivial integer solutions to $x^n+y^n=z^n$, via modularity of elliptic curves.",
     "details": "Modularity of semistable elliptic curves implies Fermat; completed with Taylor–Wiles method.",
-    "domains": ["Number Theory", "Algebraic Geometry"],
-    "people": [{ "name": "Andrew Wiles" }, { "name": "Richard Taylor" }],
-    "seeAlso": ["disquisitiones-arithmeticae-1801", "grothendieck-schemes-1957"]
+    "domains": [
+      "Number Theory",
+      "Algebraic Geometry"
+    ],
+    "people": [
+      {
+        "name": "Andrew Wiles"
+      },
+      {
+        "name": "Richard Taylor"
+      }
+    ],
+    "seeAlso": [
+      "disquisitiones-arithmeticae-1801",
+      "grothendieck-schemes-1957"
+    ],
+    "level": 0
+  },
+  {
+    "id": "green-tao-2004",
+    "year": "2004",
+    "era": "21st Century",
+    "title": "Green–Tao Theorem",
+    "blurb": "The primes contain arbitrarily long arithmetic progressions.",
+    "level": 1,
+    "domains": [
+      "Number Theory",
+      "Combinatorics"
+    ],
+    "people": [
+      {
+        "name": "Ben Green"
+      },
+      {
+        "name": "Terence Tao"
+      }
+    ],
+    "seeAlso": [
+      "disquisitiones-arithmeticae-1801",
+      "bounded-prime-gaps-2013"
+    ]
   },
   {
     "id": "perelman-poincare-2002-2003",
@@ -472,9 +1447,24 @@
     "title": "Perelman and Poincaré",
     "blurb": "Ricci flow with surgery settles the Poincaré conjecture and Thurston's geometrization in dimension 3.",
     "details": "Perelman's monotonicity and no-local-collapsing enable controlled surgeries during flow.",
-    "domains": ["Topology", "Geometry", "PDE"],
-    "people": [{ "name": "Grigori Perelman" }, { "name": "Richard S. Hamilton", "role": "Ricci flow" }],
-    "seeAlso": ["riemann-habilitation-1854"]
+    "domains": [
+      "Topology",
+      "Geometry",
+      "PDE"
+    ],
+    "people": [
+      {
+        "name": "Grigori Perelman"
+      },
+      {
+        "name": "Richard S. Hamilton",
+        "role": "Ricci flow"
+      }
+    ],
+    "seeAlso": [
+      "riemann-habilitation-1854"
+    ],
+    "level": 0
   },
   {
     "id": "flyspeck-kepler-2014",
@@ -483,9 +1473,19 @@
     "title": "Flyspeck and Kepler Conjecture",
     "blurb": "Hales' proof of optimal sphere packing in $\\mathbb R^3$ is fully formalized in HOL Light and Isabelle.",
     "details": "Densest packing is face-centered cubic with density $\\pi/\\sqrt{18}$.",
-    "domains": ["Discrete Geometry", "Formal Methods"],
-    "people": [{ "name": "Thomas Hales" }],
-    "seeAlso": ["four-color-theorem-1976"]
+    "domains": [
+      "Discrete Geometry",
+      "Formal Methods"
+    ],
+    "people": [
+      {
+        "name": "Thomas Hales"
+      }
+    ],
+    "seeAlso": [
+      "four-color-theorem-1976"
+    ],
+    "level": 0
   },
   {
     "id": "bounded-prime-gaps-2013",
@@ -494,9 +1494,25 @@
     "title": "Bounded Gaps Between Primes",
     "blurb": "Zhang proves finite prime gaps occur infinitely often; Polymath and Maynard refine to small explicit bounds.",
     "details": "There exist infinitely many primes $p_n$ with $p_{n+1}-p_n \\leq C$ for some absolute $C$.",
-    "domains": ["Number Theory"],
-    "people": [{ "name": "Yitang Zhang" }, { "name": "James Maynard" }, { "name": "Terence Tao", "role": "Polymath" }],
-    "seeAlso": ["disquisitiones-arithmeticae-1801"]
+    "domains": [
+      "Number Theory"
+    ],
+    "people": [
+      {
+        "name": "Yitang Zhang"
+      },
+      {
+        "name": "James Maynard"
+      },
+      {
+        "name": "Terence Tao",
+        "role": "Polymath"
+      }
+    ],
+    "seeAlso": [
+      "disquisitiones-arithmeticae-1801"
+    ],
+    "level": 0
   },
   {
     "id": "perfectoid-methods-2018",
@@ -505,8 +1521,18 @@
     "title": "Perfectoid Methods Broaden",
     "blurb": "Scholze's perfectoid spaces reshape $p$-adic geometry and the Langlands program; new bridges across arithmetic.",
     "details": "Untilts and almost mathematics enable comparisons in $p$-adic Hodge theory.",
-    "domains": ["Number Theory", "Algebraic Geometry"],
-    "people": [{ "name": "Peter Scholze" }],
-    "seeAlso": ["grothendieck-schemes-1957"]
+    "domains": [
+      "Number Theory",
+      "Algebraic Geometry"
+    ],
+    "people": [
+      {
+        "name": "Peter Scholze"
+      }
+    ],
+    "seeAlso": [
+      "grothendieck-schemes-1957"
+    ],
+    "level": 0
   }
 ]
