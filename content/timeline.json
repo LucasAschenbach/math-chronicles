@@ -471,6 +471,23 @@
     "level": 0
   },
   {
+    "id": "newton-raphson-method-1669-1690",
+    "year": "1669–1690",
+    "era": "Early Modern",
+    "title": "Newton–Raphson Method",
+    "blurb": "Iterative root-finding via tangents: $x_{n+1}=x_n-\\tfrac{f(x_n)}{f'(x_n)}$; quadratic convergence near simple roots.",
+    "domains": [
+      "Numerical Methods",
+      "Analysis",
+      "Algorithms"
+    ],
+    "people": [
+      { "name": "Isaac Newton" },
+      { "name": "Joseph Raphson" }
+    ],
+    "level": 0
+  },
+  {
     "id": "leibniz-differential-calculus-1684",
     "year": "1684",
     "era": "Early Modern",
@@ -699,6 +716,22 @@
       { "name": "Pierre-Simon Laplace" }
     ],
     "level": 1
+  },
+  {
+    "id": "least-squares-1805-1809",
+    "year": "1805–1809",
+    "era": "19th Century",
+    "title": "Least Squares (Legendre–Gauss)",
+    "blurb": "Data fitting via normal equations $A^\nT A x = A^\nT b$; used by Gauss for celestial orbits.",
+    "domains": [
+      "Numerical Methods",
+      "Statistics"
+    ],
+    "people": [
+      { "name": "Adrien-Marie Legendre" },
+      { "name": "Carl Friedrich Gauss" }
+    ],
+    "level": 0
   },
   {
     "id": "cauchy-cours-danalyse-1821",
@@ -993,6 +1026,22 @@
     ],
     "people": [
       { "name": "Ferdinand von Lindemann" }
+    ],
+    "level": 1
+  },
+  {
+    "id": "runge-kutta-1895",
+    "year": "1895",
+    "era": "19th Century",
+    "title": "Runge–Kutta Methods",
+    "blurb": "Multi-stage ODE integrators generalize Euler's method; classical RK4 becomes a workhorse.",
+    "domains": [
+      "Numerical Methods",
+      "Differential Equations"
+    ],
+    "people": [
+      { "name": "Carl Runge" },
+      { "name": "Wilhelm Kutta" }
     ],
     "level": 1
   },
@@ -1298,6 +1347,23 @@
     ]
   },
   {
+    "id": "cfl-condition-1928",
+    "year": "1928",
+    "era": "20th Century",
+    "title": "Courant–Friedrichs–Lewy (CFL) Condition",
+    "blurb": "Stability constraint ties timestep and grid spacing for hyperbolic PDE discretizations.",
+    "domains": [
+      "Numerical Methods",
+      "PDE"
+    ],
+    "people": [
+      { "name": "Richard Courant" },
+      { "name": "Kurt Friedrichs" },
+      { "name": "Hans Lewy" }
+    ],
+    "level": 2
+  },
+  {
     "id": "turing-computability-1936",
     "year": "1936",
     "era": "20th Century",
@@ -1380,6 +1446,22 @@
     ]
   },
   {
+    "id": "finite-element-method-1943-1960",
+    "year": "1943–1960",
+    "era": "20th Century",
+    "title": "Finite Element Method",
+    "blurb": "Piecewise-polynomial Galerkin discretization for PDEs; from Courant's variational ideas to Clough's naming.",
+    "domains": [
+      "Numerical Methods",
+      "PDE"
+    ],
+    "people": [
+      { "name": "Richard Courant" },
+      { "name": "Ray W. Clough" }
+    ],
+    "level": 1
+  },
+  {
     "id": "shannon-information-theory-1948",
     "year": "1948",
     "era": "20th Century",
@@ -1416,6 +1498,23 @@
     "level": 0
   },
   {
+    "id": "conjugate-gradient-1952",
+    "year": "1952",
+    "era": "20th Century",
+    "title": "Conjugate Gradient Method",
+    "blurb": "Krylov subspace method solves symmetric positive-definite systems efficiently without factorization.",
+    "domains": [
+      "Numerical Methods",
+      "Linear Algebra",
+      "Optimization"
+    ],
+    "people": [
+      { "name": "Magnus Hestenes" },
+      { "name": "Eduard Stiefel" }
+    ],
+    "level": 1
+  },
+  {
     "id": "grothendieck-schemes-1957",
     "year": "1957",
     "era": "20th Century",
@@ -1439,6 +1538,36 @@
     "level": 0
   },
   {
+    "id": "householder-transformations-1958",
+    "year": "1958",
+    "era": "20th Century",
+    "title": "Householder Transformations",
+    "blurb": "Orthogonal reflections enable stable QR factorization and least-squares computations.",
+    "domains": [
+      "Numerical Methods",
+      "Linear Algebra"
+    ],
+    "people": [
+      { "name": "Alston S. Householder" }
+    ],
+    "level": 2
+  },
+  {
+    "id": "godunov-finite-volume-1959",
+    "year": "1959",
+    "era": "20th Century",
+    "title": "Godunov's Finite Volume Scheme",
+    "blurb": "Conservative upwind method using Riemann problems; robust shock-capturing for hyperbolic PDEs.",
+    "domains": [
+      "Numerical Methods",
+      "PDE"
+    ],
+    "people": [
+      { "name": "Sergei K. Godunov" }
+    ],
+    "level": 2
+  },
+  {
     "id": "atiyah-singer-1963",
     "year": "1963",
     "era": "20th Century",
@@ -1458,6 +1587,54 @@
         "name": "Isadore Singer"
       }
     ]
+  },
+  {
+    "id": "kalman-filter-1960",
+    "year": "1960",
+    "era": "20th Century",
+    "title": "Kalman Filter",
+    "blurb": "Recursive least squares for dynamic state estimation; optimal for linear Gaussian systems.",
+    "domains": [
+      "Control",
+      "Numerical Methods",
+      "Probability"
+    ],
+    "people": [
+      { "name": "Rudolf E. Kalman" }
+    ],
+    "level": 1
+  },
+  {
+    "id": "qr-algorithm-1961",
+    "year": "1961",
+    "era": "20th Century",
+    "title": "QR Algorithm",
+    "blurb": "Implicitly shifted QR iteration computes eigenvalues reliably; cornerstone of numerical linear algebra.",
+    "domains": [
+      "Numerical Methods",
+      "Linear Algebra"
+    ],
+    "people": [
+      { "name": "John G. F. Francis" },
+      { "name": "Vera Kublanovskaya" }
+    ],
+    "level": 1
+  },
+  {
+    "id": "lax-richtmyer-equivalence-1956",
+    "year": "1956",
+    "era": "20th Century",
+    "title": "Lax–Richtmyer Equivalence Theorem",
+    "blurb": "For linear well-posed IVPs, stability plus consistency implies convergence of finite-difference schemes (and conversely).",
+    "domains": [
+      "Numerical Methods",
+      "PDE"
+    ],
+    "people": [
+      { "name": "Peter Lax" },
+      { "name": "Robert D. Richtmyer" }
+    ],
+    "level": 2
   },
   {
     "id": "hironaka-resolution-1964",
@@ -1510,6 +1687,22 @@
       "wiles-fermat-1994"
     ],
     "level": 1
+  },
+  {
+    "id": "automatic-differentiation-1964-1970",
+    "year": "1964–1970",
+    "era": "20th Century",
+    "title": "Automatic Differentiation",
+    "blurb": "Exact derivatives via program transformation and the chain rule; reverse-mode scales to many parameters.",
+    "domains": [
+      "Numerical Methods",
+      "Optimization"
+    ],
+    "people": [
+      { "name": "R. E. Wengert" },
+      { "name": "Seppo Linnainmaa" }
+    ],
+    "level": 2
   },
   {
     "id": "cohen-ch-independence-1963",
@@ -1592,6 +1785,21 @@
     "level": 0
   },
   {
+    "id": "spectral-methods-1971",
+    "year": "1971",
+    "era": "20th Century",
+    "title": "Spectral Methods for PDEs",
+    "blurb": "Global trigonometric/polynomial bases achieve exponential accuracy for smooth problems.",
+    "domains": [
+      "Numerical Methods",
+      "PDE"
+    ],
+    "people": [
+      { "name": "Steven A. Orszag" }
+    ],
+    "level": 3
+  },
+  {
     "id": "szemeredi-theorem-1975",
     "year": "1975",
     "era": "20th Century",
@@ -1608,6 +1816,21 @@
       "green-tao-2004"
     ],
     "level": 1
+  },
+  {
+    "id": "tikhonov-regularization-1963",
+    "year": "1963",
+    "era": "20th Century",
+    "title": "Tikhonov Regularization",
+    "blurb": "Stabilizes ill-posed inverse problems by penalizing solution norms; ridge regression in statistics.",
+    "domains": [
+      "Numerical Methods",
+      "Optimization"
+    ],
+    "people": [
+      { "name": "Andrey N. Tikhonov" }
+    ],
+    "level": 2
   },
   {
     "id": "yau-calabi-1976",
@@ -1628,6 +1851,21 @@
     "seeAlso": [
       "riemann-habilitation-1854"
     ]
+  },
+  {
+    "id": "multigrid-method-1977",
+    "year": "1977",
+    "era": "20th Century",
+    "title": "Multigrid Method",
+    "blurb": "Hierarchy of grids accelerates elliptic and parabolic PDE solvers to near-linear complexity.",
+    "domains": [
+      "Numerical Methods",
+      "PDE"
+    ],
+    "people": [
+      { "name": "Achi Brandt" }
+    ],
+    "level": 2
   },
   {
     "id": "four-color-theorem-1976",
@@ -1840,6 +2078,21 @@
     "level": 0
   },
   {
+    "id": "interior-point-1984",
+    "year": "1984",
+    "era": "20th Century",
+    "title": "Interior-Point Methods for LP",
+    "blurb": "Karmarkar's polynomial-time projective algorithm revitalizes convex optimization and numerical LP solvers.",
+    "domains": [
+      "Optimization",
+      "Numerical Methods"
+    ],
+    "people": [
+      { "name": "Narendra Karmarkar" }
+    ],
+    "level": 1
+  },
+  {
     "id": "green-tao-2004",
     "year": "2004",
     "era": "21st Century",
@@ -1896,6 +2149,103 @@
       { "name": "David Donoho" }
     ],
     "level": 1
+  },
+  {
+    "id": "gmres-1986",
+    "year": "1986",
+    "era": "20th Century",
+    "title": "GMRES Method",
+    "blurb": "Generalized minimal residual Krylov method for nonsymmetric linear systems.",
+    "domains": [
+      "Numerical Methods",
+      "Linear Algebra"
+    ],
+    "people": [
+      { "name": "Yousef Saad" },
+      { "name": "Martin H. Schultz" }
+    ],
+    "level": 2
+  },
+  {
+    "id": "fast-multipole-1987",
+    "year": "1987",
+    "era": "20th Century",
+    "title": "Fast Multipole Method",
+    "blurb": "Near-linear-time $N$-body interactions via hierarchical multipole/local expansions.",
+    "domains": [
+      "Numerical Methods",
+      "Algorithms"
+    ],
+    "people": [
+      { "name": "Leslie Greengard" },
+      { "name": "Vladimir Rokhlin" }
+    ],
+    "level": 2
+  },
+  {
+    "id": "bfgs-1970",
+    "year": "1970",
+    "era": "20th Century",
+    "title": "Quasi-Newton BFGS",
+    "blurb": "Curvature-updating optimization without Hessians; robust workhorse for smooth unconstrained problems.",
+    "domains": [
+      "Optimization",
+      "Numerical Methods"
+    ],
+    "people": [
+      { "name": "Charles G. Broyden" },
+      { "name": "Roger Fletcher" },
+      { "name": "Donald Goldfarb" },
+      { "name": "David Shanno" }
+    ],
+    "level": 1
+  },
+  {
+    "id": "remez-algorithm-1934",
+    "year": "1934",
+    "era": "20th Century",
+    "title": "Remez Algorithm for Minimax Approximation",
+    "blurb": "Computes near-minimax polynomials using Chebyshev alternation; central in approximation theory.",
+    "domains": [
+      "Numerical Methods",
+      "Approximation"
+    ],
+    "people": [
+      { "name": "Evgeny Remez" }
+    ],
+    "level": 3
+  },
+  {
+    "id": "b-splines-1946",
+    "year": "1946",
+    "era": "20th Century",
+    "title": "B-splines and Spline Approximation",
+    "blurb": "Schoenberg introduces B-splines; stable bases for interpolation, smoothing, and geometric modeling.",
+    "domains": [
+      "Numerical Methods",
+      "Approximation",
+      "Geometry"
+    ],
+    "people": [
+      { "name": "Isaac J. Schoenberg" }
+    ],
+    "level": 2
+  },
+  {
+    "id": "nelder-mead-1965",
+    "year": "1965",
+    "era": "20th Century",
+    "title": "Nelder–Mead Simplex Method",
+    "blurb": "Derivative-free local optimization using a moving simplex; widely used in low dimensions.",
+    "domains": [
+      "Optimization",
+      "Numerical Methods"
+    ],
+    "people": [
+      { "name": "John Nelder" },
+      { "name": "Roger Mead" }
+    ],
+    "level": 3
   },
   {
     "id": "perelman-poincare-2002-2003",
