@@ -35,8 +35,9 @@ function main() {
     fail("timeline.json must export a JSON array of items");
   }
 
-  const requiredKeys = ["year", "title", "blurb"]; // details and image are optional
+  const requiredKeys = ["id", "year", "title", "blurb"]; // details and image are optional
   const errors = [];
+  const ids = new Set();
 
   data.forEach((it, idx) => {
     const where = `item[${idx}]`;
@@ -50,8 +51,68 @@ function main() {
       else if (typeof it[k] !== "string") errors.push(`${where}.${k} must be a string`);
     }
 
+    // id uniqueness
+    if (typeof it.id === "string") {
+      if (ids.has(it.id)) errors.push(`${where}.id '${it.id}' is duplicated`);
+      ids.add(it.id);
+    }
+
     if ("details" in it && typeof it.details !== "string") {
       errors.push(`${where}.details must be a string if present`);
+    }
+
+    if ("era" in it && it.era !== undefined && typeof it.era !== "string") {
+      errors.push(`${where}.era must be a string if present`);
+    }
+
+    if ("domains" in it && it.domains !== undefined) {
+      if (!Array.isArray(it.domains)) errors.push(`${where}.domains must be an array of strings`);
+      else if (it.domains.some((d) => typeof d !== "string")) errors.push(`${where}.domains must contain only strings`);
+    }
+
+    if ("tags" in it && it.tags !== undefined) {
+      if (!Array.isArray(it.tags)) errors.push(`${where}.tags must be an array of strings`);
+      else if (it.tags.some((d) => typeof d !== "string")) errors.push(`${where}.tags must contain only strings`);
+    }
+
+    if ("people" in it && it.people !== undefined) {
+      if (!Array.isArray(it.people)) errors.push(`${where}.people must be an array of objects`);
+      else {
+        it.people.forEach((p, j) => {
+          const pWhere = `${where}.people[${j}]`;
+          if (typeof p !== "object" || p === null || Array.isArray(p)) {
+            errors.push(`${pWhere} must be an object`);
+            return;
+          }
+          if (!("name" in p) || typeof p.name !== "string") errors.push(`${pWhere}.name is required and must be a string`);
+          if ("link" in p && p.link !== undefined && typeof p.link !== "string") errors.push(`${pWhere}.link must be a string if present`);
+          if ("role" in p && p.role !== undefined && typeof p.role !== "string") errors.push(`${pWhere}.role must be a string if present`);
+        });
+      }
+    }
+
+    if ("seeAlso" in it && it.seeAlso !== undefined) {
+      if (!Array.isArray(it.seeAlso)) errors.push(`${where}.seeAlso must be an array of strings`);
+      else if (it.seeAlso.some((s) => typeof s !== "string")) errors.push(`${where}.seeAlso must contain only strings`);
+    }
+
+    if ("sources" in it && it.sources !== undefined) {
+      if (!Array.isArray(it.sources)) errors.push(`${where}.sources must be an array of objects`);
+      else {
+        it.sources.forEach((s, j) => {
+          const sWhere = `${where}.sources[${j}]`;
+          if (typeof s !== "object" || s === null || Array.isArray(s)) {
+            errors.push(`${sWhere} must be an object`);
+            return;
+          }
+          if (!("url" in s) || typeof s.url !== "string") errors.push(`${sWhere}.url is required and must be a string`);
+          if ("label" in s && s.label !== undefined && typeof s.label !== "string") errors.push(`${sWhere}.label must be a string if present`);
+        });
+      }
+    }
+
+    if ("endYear" in it && it.endYear !== undefined && typeof it.endYear !== "string") {
+      errors.push(`${where}.endYear must be a string if present`);
     }
 
     if ("image" in it && it.image !== undefined) {
@@ -81,6 +142,20 @@ function main() {
     }
   });
 
+  // Validate cross-references in seeAlso
+  const itemsById = new Map();
+  data.forEach((it) => {
+    if (typeof it.id === "string") itemsById.set(it.id, it);
+  });
+  data.forEach((it, idx) => {
+    const where = `item[${idx}]`;
+    if (Array.isArray(it.seeAlso)) {
+      it.seeAlso.forEach((id) => {
+        if (!itemsById.has(id)) warn(`${where}.seeAlso references missing id '${id}'`);
+      });
+    }
+  });
+
   if (errors.length) {
     console.error("\nFound the following issues:\n- " + errors.join("\n- "));
     process.exit(1);
@@ -90,4 +165,3 @@ function main() {
 }
 
 main();
-

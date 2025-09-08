@@ -5,11 +5,19 @@ import Image from "next/image";
 import { MathText } from "./MathText";
 
 export type TimelineItem = {
+  id?: string;
   year: string;
+  endYear?: string;
+  era?: string;
   title: string;
   blurb: string;
   details?: string;
   image?: { src: string; alt?: string; caption?: string };
+  domains?: string[];
+  tags?: string[];
+  people?: { name: string; link?: string; role?: string }[];
+  seeAlso?: string[];
+  sources?: { label?: string; url: string }[];
 };
 
 export function Timeline({ items }: { items: TimelineItem[] }) {
@@ -60,6 +68,40 @@ function TimelineRow({ item }: { item: TimelineItem }) {
             {open ? "Hide" : "More"}
           </button>
         </div>
+
+        {(item.domains || item.era || item.people) && (
+          <div className="mt-1 flex flex-wrap items-center gap-2">
+            {item.domains?.map((d, i) => (
+              <span
+                key={`dom-${i}`}
+                className="text-[10px] uppercase tracking-wide rounded-full bg-white/5 px-2 py-0.5 text-neutral-300 border border-white/10"
+              >
+                {d}
+              </span>
+            ))}
+            {item.era && (
+              <span className="ml-1 text-[10px] rounded px-1.5 py-0.5 text-neutral-400 bg-white/0 border border-white/10">
+                {item.era}
+              </span>
+            )}
+            {item.people && item.people.length > 0 && (
+              <span className="ml-2 text-xs text-neutral-400">
+                By: {item.people.map((p, i) => (
+                  <span key={`p-${i}`}>
+                    {p.link ? (
+                      <a href={p.link} target="_blank" rel="noreferrer" className="underline-offset-2 hover:underline">
+                        {p.name}
+                      </a>
+                    ) : (
+                      p.name
+                    )}
+                    {i < item.people!.length - 1 ? ", " : ""}
+                  </span>
+                ))}
+              </span>
+            )}
+          </div>
+        )}
 
         <MathText
           text={item.blurb}
