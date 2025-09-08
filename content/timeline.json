@@ -1,5 +1,19 @@
 [
   {
+    "id": "plimpton-322-1800-bce",
+    "year": "c. 1800 BCE",
+    "era": "Ancient",
+    "title": "Plimpton 322",
+    "blurb": "Babylonian tablet listing Pythagorean triples in sexagesimal; early number-theoretic geometry.",
+    "details": "Entries correspond to integer solutions of $a^2+b^2=c^2$ tabulated in base-60.",
+    "domains": [
+      "Number Theory",
+      "Geometry",
+      "History"
+    ],
+    "level": 1
+  },
+  {
     "id": "rhind-mathematical-papyrus-1650-bce",
     "year": "c. 1650 BCE",
     "era": "Ancient",
@@ -137,6 +151,35 @@
     "level": 0
   },
   {
+    "id": "apollonius-conics-200-bce",
+    "year": "c. 200 BCE",
+    "era": "Classical",
+    "title": "Apollonius' Conics",
+    "blurb": "Systematic theory of ellipses, parabolas, and hyperbolas; focus–directrix and reflective properties.",
+    "details": "Conics via sections of a cone unify loci with optical properties and quadratic equations.",
+    "domains": [
+      "Geometry"
+    ],
+    "people": [
+      { "name": "Apollonius of Perga" }
+    ],
+    "level": 1
+  },
+  {
+    "id": "nine-chapters-100-ce",
+    "year": "c. 1st–2nd century CE",
+    "era": "Ancient",
+    "title": "The Nine Chapters on the Mathematical Art",
+    "blurb": "Chinese compendium with algorithms for linear systems, areas, and volumes; precursor to Gaussian elimination.",
+    "details": "Fangcheng method solves linear systems via elimination and back-substitution.",
+    "domains": [
+      "Algebra",
+      "Arithmetic",
+      "Geometry"
+    ],
+    "level": 0
+  },
+  {
     "id": "diophantus-arithmetica-250-ce",
     "year": "c. 250 CE",
     "era": "Late Antiquity",
@@ -157,6 +200,25 @@
       "wiles-fermat-1994"
     ],
     "level": 0
+  },
+  {
+    "id": "liu-hui-commentary-263",
+    "year": "263",
+    "era": "Late Antiquity",
+    "title": "Liu Hui's Commentary",
+    "blurb": "Clarifies Nine Chapters algorithms; polygon exhaustion refines $\\pi$ and solid computations.",
+    "domains": [
+      "Geometry",
+      "Algorithms"
+    ],
+    "people": [
+      { "name": "Liu Hui" }
+    ],
+    "seeAlso": [
+      "nine-chapters-100-ce",
+      "archimedes-method-of-exhaustion-250-bce"
+    ],
+    "level": 1
   },
   {
     "id": "brahmagupta-zero-628",
@@ -198,6 +260,38 @@
       "viete-symbolic-algebra-1591"
     ],
     "level": 0
+  },
+  {
+    "id": "ibn-al-haytham-optics-1021",
+    "year": "c. 1021",
+    "era": "Medieval",
+    "title": "Ibn al-Haytham's Optics and Reflection Problem",
+    "blurb": "Geometric methods solve the reflection path problem; rigorous analysis of light and conics.",
+    "domains": [
+      "Geometry"
+    ],
+    "people": [
+      { "name": "Ibn al-Haytham (Alhazen)" }
+    ],
+    "level": 1
+  },
+  {
+    "id": "omar-khayyam-cubics-1070",
+    "year": "c. 1070",
+    "era": "Medieval",
+    "title": "Omar Khayyam on Cubic Equations",
+    "blurb": "Classifies cubic equations and solves them by intersecting conics; advances algebraic geometry.",
+    "domains": [
+      "Algebra",
+      "Geometry"
+    ],
+    "people": [
+      { "name": "Omar Khayyam" }
+    ],
+    "seeAlso": [
+      "cardano-ars-magna-1545"
+    ],
+    "level": 1
   },
   {
     "id": "fibonacci-liber-abaci-1202",
@@ -306,6 +400,55 @@
       }
     ],
     "level": 0
+  },
+  {
+    "id": "fermat-little-theorem-1640",
+    "year": "1640",
+    "era": "Early Modern",
+    "title": "Fermat's Little Theorem",
+    "blurb": "For prime $p$ and $p \\nmid a$, $a^{p-1} \\equiv 1 \\pmod p$; cornerstone for modern number theory and cryptography.",
+    "domains": [
+      "Number Theory"
+    ],
+    "people": [
+      { "name": "Pierre de Fermat" }
+    ],
+    "seeAlso": [
+      "disquisitiones-arithmeticae-1801"
+    ],
+    "level": 1
+  },
+  {
+    "id": "pascal-fermat-probability-1654",
+    "year": "1654",
+    "era": "Early Modern",
+    "title": "Pascal–Fermat Correspondence",
+    "blurb": "Birth of probability theory via the problem of points and expected value.",
+    "domains": [
+      "Probability"
+    ],
+    "people": [
+      { "name": "Blaise Pascal" },
+      { "name": "Pierre de Fermat" }
+    ],
+    "level": 0
+  },
+  {
+    "id": "huygens-probability-1657",
+    "year": "1657",
+    "era": "Early Modern",
+    "title": "Huygens: De ratiociniis in ludo aleae",
+    "blurb": "First textbook on probability; expectation formalized and examples systematized.",
+    "domains": [
+      "Probability"
+    ],
+    "people": [
+      { "name": "Christiaan Huygens" }
+    ],
+    "seeAlso": [
+      "law-of-large-numbers-1713"
+    ],
+    "level": 1
   },
   {
     "id": "newton-calculus-notes-1666",
@@ -428,6 +571,41 @@
     "level": 0
   },
   {
+    "id": "euler-lagrange-variations-1755",
+    "year": "1755",
+    "era": "18th Century",
+    "title": "Euler–Lagrange Equations",
+    "blurb": "Calculus of variations formalized; necessary conditions for extrema of functionals.",
+    "details": "Equation $\\frac{d}{dx} \\partial_{y'} L(x,y,y') - \\partial_y L(x,y,y') = 0$ governs stationary curves.",
+    "domains": [
+      "Calculus of Variations",
+      "Analysis"
+    ],
+    "people": [
+      { "name": "Leonhard Euler" },
+      { "name": "Joseph-Louis Lagrange" }
+    ],
+    "level": 1
+  },
+  {
+    "id": "euler-polyhedron-formula-1758",
+    "year": "1758",
+    "era": "18th Century",
+    "title": "Euler's Polyhedron Formula",
+    "blurb": "For convex polyhedra, $V - E + F = 2$; a precursor of topology.",
+    "domains": [
+      "Topology",
+      "Geometry"
+    ],
+    "people": [
+      { "name": "Leonhard Euler" }
+    ],
+    "seeAlso": [
+      "bridges-of-konigsberg-1736"
+    ],
+    "level": 1
+  },
+  {
     "id": "bayes-theorem-1763",
     "year": "1763",
     "era": "18th Century",
@@ -446,6 +624,25 @@
         "name": "Richard Price"
       }
     ]
+  },
+  {
+    "id": "lagrange-analytical-mechanics-1788",
+    "year": "1788",
+    "era": "18th Century",
+    "title": "Lagrange's Analytical Mechanics",
+    "blurb": "Variational formulation of mechanics with generalized coordinates and the action principle.",
+    "domains": [
+      "Mechanics",
+      "Calculus of Variations"
+    ],
+    "people": [
+      { "name": "Joseph-Louis Lagrange" }
+    ],
+    "seeAlso": [
+      "newton-principia-1687",
+      "euler-lagrange-variations-1755"
+    ],
+    "level": 1
   },
   {
     "id": "fundamental-theorem-of-algebra-1799",
@@ -488,6 +685,20 @@
       "bounded-prime-gaps-2013"
     ],
     "level": 0
+  },
+  {
+    "id": "laplace-theory-probability-1812",
+    "year": "1812",
+    "era": "19th Century",
+    "title": "Laplace's Analytical Theory of Probability",
+    "blurb": "Foundational treatise synthesizing combinatorics, generating functions, and asymptotics in probability.",
+    "domains": [
+      "Probability"
+    ],
+    "people": [
+      { "name": "Pierre-Simon Laplace" }
+    ],
+    "level": 1
   },
   {
     "id": "cauchy-cours-danalyse-1821",
@@ -552,6 +763,25 @@
     "level": 0
   },
   {
+    "id": "galois-theory-1832",
+    "year": "1832",
+    "era": "19th Century",
+    "title": "Galois Theory",
+    "blurb": "Solvability by radicals characterized via group theory; field extensions and automorphisms unify equations.",
+    "domains": [
+      "Algebra",
+      "Number Theory"
+    ],
+    "people": [
+      { "name": "Évariste Galois" }
+    ],
+    "seeAlso": [
+      "cardano-ars-magna-1545",
+      "sylow-theorems-1872"
+    ],
+    "level": 0
+  },
+  {
     "id": "hamilton-quaternions-1843",
     "year": "1843",
     "era": "19th Century",
@@ -567,6 +797,20 @@
       }
     ],
     "level": 0
+  },
+  {
+    "id": "riemann-mapping-theorem-1851",
+    "year": "1851",
+    "era": "19th Century",
+    "title": "Riemann Mapping Theorem",
+    "blurb": "Every simply connected proper open subset of $\\mathbb C$ is conformally equivalent to the unit disk.",
+    "domains": [
+      "Complex Analysis"
+    ],
+    "people": [
+      { "name": "Bernhard Riemann" }
+    ],
+    "level": 1
   },
   {
     "id": "riemann-habilitation-1854",
@@ -607,6 +851,39 @@
     ]
   },
   {
+    "id": "dedekind-cuts-1872",
+    "year": "1872",
+    "era": "19th Century",
+    "title": "Dedekind Cuts",
+    "blurb": "Construction of the real numbers from rationals via partitions (cuts); rigorous real analysis.",
+    "domains": [
+      "Foundations",
+      "Number Theory"
+    ],
+    "people": [
+      { "name": "Richard Dedekind" }
+    ],
+    "seeAlso": [
+      "cauchy-cours-danalyse-1821"
+    ],
+    "level": 1
+  },
+  {
+    "id": "weierstrass-nowhere-differentiable-1872",
+    "year": "1872",
+    "era": "19th Century",
+    "title": "Weierstrass Nowhere-Differentiable Function",
+    "blurb": "Continuous but nowhere-differentiable functions exist; analysis sheds naive smoothness assumptions.",
+    "details": "Prototype $f(x)=\\sum_{n=0}^\\infty a^n \\cos(b^n x)$ for $0<a<1$, $b \\in 2\\mathbb N+1$, $ab>1$.",
+    "domains": [
+      "Analysis"
+    ],
+    "people": [
+      { "name": "Karl Weierstrass" }
+    ],
+    "level": 1
+  },
+  {
     "id": "riemann-hypothesis-1859",
     "year": "1859",
     "era": "19th Century",
@@ -626,6 +903,21 @@
       "disquisitiones-arithmeticae-1801",
       "bounded-prime-gaps-2013"
     ]
+  },
+  {
+    "id": "lie-groups-1870",
+    "year": "1870s",
+    "era": "19th Century",
+    "title": "Lie Groups and Lie Algebras",
+    "blurb": "Continuous symmetry groups and their algebras unify geometry and differential equations.",
+    "domains": [
+      "Algebra",
+      "Geometry"
+    ],
+    "people": [
+      { "name": "Sophus Lie" }
+    ],
+    "level": 1
   },
   {
     "id": "cantor-uncountability-1874",
@@ -691,6 +983,20 @@
     ]
   },
   {
+    "id": "lindemann-pi-transcendence-1882",
+    "year": "1882",
+    "era": "19th Century",
+    "title": "Lindemann proves $\\pi$ is transcendental",
+    "blurb": "Transcendence settles the ancient squaring-the-circle problem in the negative.",
+    "domains": [
+      "Number Theory"
+    ],
+    "people": [
+      { "name": "Ferdinand von Lindemann" }
+    ],
+    "level": 1
+  },
+  {
     "id": "foundations-set-geometry-1895-1899",
     "year": "1895–1899",
     "era": "19th Century",
@@ -738,6 +1044,39 @@
     "level": 0
   },
   {
+    "id": "lebesgue-integration-1902",
+    "year": "1902",
+    "era": "20th Century",
+    "title": "Lebesgue Integral",
+    "blurb": "Measure-theoretic integration extends Riemann's theory and enables modern analysis and probability.",
+    "domains": [
+      "Analysis",
+      "Measure Theory"
+    ],
+    "people": [
+      { "name": "Henri Lebesgue" }
+    ],
+    "seeAlso": [
+      "kolmogorov-foundations-1933",
+      "cauchy-cours-danalyse-1821"
+    ],
+    "level": 0
+  },
+  {
+    "id": "markov-chains-1906",
+    "year": "1906",
+    "era": "20th Century",
+    "title": "Markov Chains",
+    "blurb": "Stochastic processes with memoryless transitions; long-run behavior via ergodic theorems.",
+    "domains": [
+      "Probability"
+    ],
+    "people": [
+      { "name": "Andrey Markov" }
+    ],
+    "level": 1
+  },
+  {
     "id": "zermelo-axioms-1908",
     "year": "1908",
     "era": "20th Century",
@@ -764,6 +1103,21 @@
       "principia-mathematica-1910-1913"
     ],
     "level": 0
+  },
+  {
+    "id": "brouwer-fixed-point-1911",
+    "year": "1911",
+    "era": "20th Century",
+    "title": "Brouwer Fixed Point Theorem",
+    "blurb": "Every continuous map from a closed disk to itself has a fixed point; foundational in topology and analysis.",
+    "domains": [
+      "Topology",
+      "Analysis"
+    ],
+    "people": [
+      { "name": "L. E. J. Brouwer" }
+    ],
+    "level": 1
   },
   {
     "id": "noether-theorem-1918",
@@ -846,6 +1200,21 @@
       "principia-mathematica-1910-1913",
       "godel-incompleteness-1931"
     ]
+  },
+  {
+    "id": "ramsey-theorem-1930",
+    "year": "1930",
+    "era": "20th Century",
+    "title": "Ramsey's Theorem",
+    "blurb": "In any large enough structure, order emerges: monochromatic substructures exist under all colorings.",
+    "domains": [
+      "Combinatorics",
+      "Logic"
+    ],
+    "people": [
+      { "name": "Frank P. Ramsey" }
+    ],
+    "level": 1
   },
   {
     "id": "godel-incompleteness-1931",
@@ -1107,6 +1476,42 @@
     ]
   },
   {
+    "id": "cooley-tukey-fft-1965",
+    "year": "1965",
+    "era": "20th Century",
+    "title": "Cooley–Tukey FFT",
+    "blurb": "Fast Fourier Transform reduces $O(n^2)$ convolution to $O(n \\log n)$; foundational in signal processing.",
+    "domains": [
+      "Algorithms",
+      "Numerical Methods",
+      "Signal Processing"
+    ],
+    "people": [
+      { "name": "James Cooley" },
+      { "name": "John Tukey" }
+    ],
+    "level": 1
+  },
+  {
+    "id": "langlands-program-1967",
+    "year": "1967",
+    "era": "20th Century",
+    "title": "Langlands Program (letter to Weil)",
+    "blurb": "Reciprocity connects Galois groups and automorphic forms; a grand unifying vision in number theory.",
+    "domains": [
+      "Number Theory",
+      "Representation Theory"
+    ],
+    "people": [
+      { "name": "Robert Langlands" }
+    ],
+    "seeAlso": [
+      "grothendieck-schemes-1957",
+      "wiles-fermat-1994"
+    ],
+    "level": 1
+  },
+  {
     "id": "cohen-ch-independence-1963",
     "year": "1963",
     "era": "20th Century",
@@ -1185,6 +1590,24 @@
       "turing-computability-1936"
     ],
     "level": 0
+  },
+  {
+    "id": "szemeredi-theorem-1975",
+    "year": "1975",
+    "era": "20th Century",
+    "title": "Szemerédi's Theorem",
+    "blurb": "Any subset of the integers with positive upper density contains arbitrarily long arithmetic progressions.",
+    "domains": [
+      "Combinatorics",
+      "Number Theory"
+    ],
+    "people": [
+      { "name": "Endre Szemerédi" }
+    ],
+    "seeAlso": [
+      "green-tao-2004"
+    ],
+    "level": 1
   },
   {
     "id": "yau-calabi-1976",
@@ -1439,6 +1862,40 @@
       "disquisitiones-arithmeticae-1801",
       "bounded-prime-gaps-2013"
     ]
+  },
+  {
+    "id": "classification-finite-simple-groups-2004",
+    "year": "2004",
+    "era": "21st Century",
+    "title": "Classification of Finite Simple Groups (CFSG)",
+    "blurb": "A decades-long project culminates in a classification of all finite simple groups.",
+    "domains": [
+      "Algebra"
+    ],
+    "people": [
+      { "name": "Daniel Gorenstein" },
+      { "name": "Michael Aschbacher" },
+      { "name": "Ronald Solomon" }
+    ],
+    "level": 1
+  },
+  {
+    "id": "compressed-sensing-2006",
+    "year": "2006",
+    "era": "21st Century",
+    "title": "Compressed Sensing",
+    "blurb": "Sparse signals reconstructed from few measurements via convex optimization and randomness.",
+    "domains": [
+      "Optimization",
+      "Signal Processing",
+      "Applied Math"
+    ],
+    "people": [
+      { "name": "Emmanuel Candès" },
+      { "name": "Terence Tao" },
+      { "name": "David Donoho" }
+    ],
+    "level": 1
   },
   {
     "id": "perelman-poincare-2002-2003",
